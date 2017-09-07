@@ -19,9 +19,6 @@ h1, h2 {
     background-color: khaki;
 }
 
-footer {
-    display: none;
-}
 
 
 /*/Mobile Style/*/
@@ -31,9 +28,10 @@ footer {
     #coreAreas {
         margin: 10px;
     }
-    footer {
-        display: none;
-    }
+
+.icon{
+   visibility: collapse;
+}
 }
 
 
@@ -72,8 +70,16 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
- color: khaki;
+
+
     }
+.icon {
+    display: flex;
+    margin-left: 10px;
+  padding-bottom: 2%;
+    height: 1.8em;
+}
+
 
 .first-semester-container,
 .second-semester-container,
