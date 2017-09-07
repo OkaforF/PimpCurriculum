@@ -1,53 +1,54 @@
 /*Global Styling*/
-*{
-    font-family:arial;
+
+* {
+    font-family: arial;
 }
+
 
 /*/Index.html/*/
-#courseStructure{
+
+#courseStructure {
     height: 300px;
-    background-color:azure;
+    background-color: azure;
 }
 
-
-#courseAreas{
+#courseAreas {
     height: 300px;
     background-color: khaki;
 }
 
+
 /*/Mobile Style/*/
-@media (max-width: 600px){
-    #courseStructure, #courseAreas{
+
+@media (max-width: 600px) {
+    #courseStructure,
+    #courseAreas {
         margin: 10px;
     }
 }
 
+
 /*Desktop Style*/
 
-@media (min-width: 601px){
+@media (min-width: 601px) {
+    #indexContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 3em;
+        grid-gap: 20px;
+    }
+}
 
-#indexContainer{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 3em;
-    grid-gap: 20px;
-}
-}
 
 /*/Index.html end/*/
 
+
 /*/Structure.html styling/*/
+
 * {
+    font-family: "Arial";
     margin: 0;
     padding: 0;
-}
-nav{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    background-color: cornflowerblue;
-}
-a{
-    text-align: center;
 }
 
 .structure-container {
@@ -57,23 +58,50 @@ a{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.first-semester-container {
+.first-semester-container,
+.second-semester-container,
+.third-semester-container,
+.fourth-semester-container {
+    justify-content: center;
+    display: flex;
     height: 100%;
+}
+
+.first-semester-container:hover,
+.second-semester-container:hover,
+.third-semester-container:hover,
+.fourth-semester-container:hover {
+    background-color: antiquewhite;
+}
+
+.first-semester-container {
     background-color: aquamarine;
 }
 
 .second-semester-container {
-    height: 100%;
     background-color: beige;
 }
 
 .third-semester-container {
-    height: 100%;
     background-color: aquamarine;
 }
 
 .fourth-semester-container {
-    height: 100%;
     background-color: beige;
 }
+
+.structure-text-center {
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    font-size: 2.7em;
+    height: 100%;
+}
+
+#first-sem-rot,
+#second-sem-rot,
+#third-sem-rot,
+#fourth-sem-rot {}
+
+
 /*/Structure.styling end/*/
