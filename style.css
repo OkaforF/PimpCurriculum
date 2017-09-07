@@ -3,7 +3,9 @@
 * {
     font-family: arial;
 }
-
+h1, h2 {
+    text-align: center;
+}
 
 /*/Index.html/*/
 
