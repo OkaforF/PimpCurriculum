@@ -1,48 +1,71 @@
 /*Global Styling*/
-*{
-    font-family:arial;
+
+* {
+    font-family: arial;
 }
+
 
 /*/Index.html/*/
-#courseStructure{
+
+#courseStructure {
     height: 300px;
-    background-color:azure;
+    background-color: azure;
 }
 
-
-#courseAreas{
+#coreAreas {
     height: 300px;
     background-color: khaki;
 }
+
 footer {
     display: none;
-
 }
 
 
 /*/Mobile Style/*/
-@media (max-width: 600px){
-    #courseStructure, #courseAreas{
+
+@media (max-width: 600px) {
+    #courseStructure,
+    #coreAreas {
         margin: 10px;
     }
-
-footer {
-    display: none;
-
+    footer {
+        display: none;
+    }
 }
-}
+
 
 /*Desktop Style*/
 
-@media (min-width: 601px){
+@media (min-width: 601px) {
+    #indexContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 3em;
+        grid-gap: 20px;
+    }
+}
 
-#indexContainer{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 3em;
-    grid-gap: 20px;
+
+/*/Index.html end/*/
+
+
+/*/Structure.html styling/*/
+
+* {
+    font-family: "Arial";
+    margin: 0;
+    padding: 0;
 }
+
+.structure-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+
 footer {
     display: flex;
     flex-direction: row;
@@ -50,18 +73,50 @@ footer {
  color: khaki;
     }
 
-.icon {
+.first-semester-container,
+.second-semester-container,
+.third-semester-container,
+.fourth-semester-container {
+    justify-content: center;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: 5px;
-  padding-bottom: 2%;
-    height: 1.8em;
-    color:blue;
-    fill:currentColor;
-
+    height: 100%;
 }
 
+.first-semester-container:hover,
+.second-semester-container:hover,
+.third-semester-container:hover,
+.fourth-semester-container:hover {
+    background-color: antiquewhite;
+}
+
+.first-semester-container {
+    background-color: aquamarine;
+}
+
+.second-semester-container {
+    background-color: beige;
+}
+
+.third-semester-container {
+    background-color: aquamarine;
+}
+
+.fourth-semester-container {
+    background-color: beige;
+}
+
+.structure-text-center {
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    font-size: 2.7em;
+    height: 100%;
+}
+
+#first-sem-rot,
+#second-sem-rot,
+#third-sem-rot,
+#fourth-sem-rot {}
 
 
-/*/Index.html end/*/
+/*/Structure.styling end/*/
