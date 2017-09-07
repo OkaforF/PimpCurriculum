@@ -10,14 +10,14 @@
 }
 
 
-#courseAreas{
+#coreAreas{
     height: 300px;
     background-color: khaki;
 }
 
 /*/Mobile Style/*/
 @media (max-width: 600px){
-    #courseStructure, #courseAreas{
+    #courseStructure, #coreAreas{
         margin: 10px;
     }
 }
