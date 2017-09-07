@@ -65,6 +65,14 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ color: khaki;
+    }
+
 .first-semester-container,
 .second-semester-container,
 .third-semester-container,
