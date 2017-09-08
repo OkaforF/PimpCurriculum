@@ -57,15 +57,6 @@ h1, h2 {
     margin: 0;
     padding: 0;
 }
-
-.structure-container {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-
 footer {
     display: flex;
     flex-direction: row;
@@ -79,6 +70,15 @@ footer {
   padding-bottom: 2%;
     height: 1.8em;
 }
+.structure-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
 
 
 .first-semester-container,
@@ -128,3 +128,16 @@ footer {
 
 
 /*/Structure.styling end/*/
+
+
+/*semester 1 styling begin*/
+.structure-container {
+    background-color: beige;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+}
+
+
+/*semester 1 styling end*/
