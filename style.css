@@ -14,7 +14,9 @@ a{
 a:hover{
     color:firebrick;
 }
-
+h1, h2 {
+    text-align: center;
+}
 
 /*/Index.html/*/
 #header{
@@ -40,9 +42,11 @@ a:hover{
     align-items: center;
 }
 
+
 #courseStructure a , #coreAreas a{
     font-size: 2em;
 }
+
 
 
 /*/Mobile Style/*/
@@ -53,9 +57,14 @@ a:hover{
     #coreAreas {
         margin: 10px;
     }
+
+.icon{
+   visibility: collapse;
+  }
     #header{
         font-size: 1.7em;
     }
+
 }
 
 
@@ -97,8 +106,16 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
- color: khaki;
+
+
     }
+.icon {
+    display: flex;
+    margin-left: 10px;
+  padding-bottom: 2%;
+    height: 1.8em;
+}
+
 
 .first-semester-container,
 .second-semester-container,
