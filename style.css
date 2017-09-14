@@ -1,57 +1,3 @@
-/*Global Styling*/
-
-* {
-    font-family: arial;
-}
-
-
-/*/Index.html/*/
-
-#courseStructure {
-    height: 300px;
-    background-color: azure;
-}
-
-#coreAreas {
-    height: 300px;
-    background-color: khaki;
-}
-
-footer {
-    display: none;
-}
-
-
-/*/Mobile Style/*/
-
-@media (max-width: 600px) {
-    #courseStructure,
-    #coreAreas {
-        margin: 10px;
-    }
-    footer {
-        display: none;
-    }
-}
-
-
-/*Desktop Style*/
-
-@media (min-width: 601px) {
-    #indexContainer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 3em;
-        grid-gap: 20px;
-    }
-}
-
-
-/*/Index.html end/*/
-
-
-/*/Structure.html styling/*/
-
 body {
     margin: 0;
 }
@@ -120,6 +66,3 @@ body {
 .fourth-expand {
     width: 80vw;
 }
-
-
-/*/Structure.styling end/*/
