@@ -3,92 +3,112 @@ body {
   margin: 0;}
 /*Global Styling*/
 
+@font-face {
+    font-family: 'lemonmilkregular';
+    src: url('lemonmilk-webfont.woff2') format('woff2'),
+         url('lemonmilk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 * {
-    font-family: "Arial";
+    font-family: "arial";
     margin: 0;
     padding: 0;
 }
 
-a{
-    text-decoration: none;
-    color:black;
+.navigation{
+    text-align: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 1em 1em 0 5em;
 }
 
-a:hover{
-    color:firebrick;
+.navigation a{
+    text-decoration: none;
 }
-h1, h2 {
-    text-align: center;
+
+.navigation a:hover{
+    color: #FF431D;
+    text-decoration: underline;
 }
 
 /*/Index.html/*/
+
+#topCont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#keaLogo{
+    height: 80px;
+}
+
+#indexBody{
+}
+
 #header{
-    font-size: 1.7em;
-    margin-bottom: 10px;
-    margin-top: 50px;
-    }
+    font-family: 'lemonmilkregular';
+    margin-top: 2em;
+    font-size: 5em;
+    color: #2B5FBF;
 
-#courseStructure {
-    padding: 2em;
-    display:grid;
-    height: 300px;
-    background-color: azure;
+}
+
+#subHeading{
+    margin-top: 1.5em;
+    font-size: 1.5em;
+}
+
+#headerCont{
     text-align: center;
-    align-items: center;
+    margin-top: 5em;
 }
 
-#coreAreas {
-    padding: 2em;
-    display:grid;
-    height: 300px;
-    background-color: khaki;
-    text-align: center;
-    align-items: center;
+#arrowIcon{
+    margin-top: 3em;
+    height: 50px;
+    transform: rotate(90deg);
 }
 
-
-#courseStructure a , #coreAreas a{
-    font-size: 2em;
+#aboutCont{
+    margin: 15em 1em 15em 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
+#aboutCont h1{
+    font-family: 'lemonmilkregular';
+    color: #4FFFCE;
+    margin: 0 0 1em 0.5em;
+    font-size: 3em;
+}
+
+#aboutCont p {
+    font-size: 1.5em;
+    margin: 0 3em 0 1.5em;
+}
+
+#aboutCont img{
+    width: 100%;
+}
 
 
 /*/Mobile Style/*/
 
 /*/Index page/*/
-@media (max-width: 600px) {
-    #courseStructure,
-    #coreAreas {
-        margin: 10px;
-    }
-
-.icon{
-   visibility: collapse;
-  }
-    #header{
-        font-size: 1.7em;
-    }
-
-}
 
 
 /*Desktop Style*/
 
 /*/Index page/*/
-@media (min-width: 601px) {
-    #indexContainer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 3em;
-        grid-gap: 20px;
-    }
-}
-
 
 /*/Index.html end/*/
 
 
 /*/Structure.html styling/*/
+
 
 .navigation{
     font-size: 1.5em;
@@ -96,8 +116,6 @@ h1, h2 {
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
 }
-
-
 
 
 .structure-container {
@@ -121,19 +139,6 @@ h1, h2 {
 }
 
 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-
-    }
-.icon {
-    display: flex;
-    margin-left: 10px;
-  padding-bottom: 2%;
-    height: 1.8em;
-}
 .structure-container {
     width: 100vw;
     height: 100vh;
