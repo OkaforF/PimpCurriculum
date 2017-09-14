@@ -52,5 +52,74 @@ footer {
 
 /*/Structure.html styling/*/
 
+body {
+    margin: 0;
+}
+
+.structure-container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: absolute;
+}
+
+.visibility {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .150s;
+    transition-delay: .150s;
+}
+
+.hide {
+    visibility: visible;
+    opacity: 1;
+}
+
+.first-semester-container,
+.second-semester-container,
+.third-semester-container,
+.fourth-semester-container {
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    position: relative;
+    z-index: 4;
+    transition: width .200s;
+    transition-timing-function: cubic-bezier(0.4, 0.0, 0.6, 1);
+    width: 0;
+    min-width: 100%;
+}
+
+.first-semester-container {
+    background-color: aquamarine;
+}
+
+.second-semester-container {
+    background-color: beige;
+}
+
+.third-semester-container {
+    background-color: aquamarine;
+}
+
+.fourth-semester-container {
+    background-color: beige;
+}
+
+.structure-text-center {
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+}
+
+.first-expand,
+.second-expand,
+.third-expand,
+.fourth-expand {
+    width: 80vw;
+}
+
 
 /*/Structure.styling end/*/
