@@ -145,10 +145,11 @@ g {
     .navigation {
         display: flex;
         justify-content: space-between;
-        padding: 15px;
+        padding: 10px;
     }
     .navigation a {
         color: white;
+        font-size: 1.2em;
     }
     #aboutCont {
         padding: 7vw;
@@ -193,13 +194,6 @@ g {
 
 /*internship styling begin*/
 
-
-/*#intern-img, #intern-txt, #career-img, #career-txt {
-     border:2px solid black;
-
-
-}*/
-
 .extra-text,
 .intern-heading {
     margin: 20px;
@@ -232,7 +226,7 @@ g {
     }
     .extra-text,
     .intern-heading {
-        margin: 20px 20px 20px o;
+        margin: 20px 20px 20px 0;
     }
     .extra-text,
     .intern-heading {
@@ -240,38 +234,24 @@ g {
     }
     #intern-container {
         display: grid;
-        grid-template-columns: repeat (4, 1fr);
-        grid-template-areas: " intimg intimg inttxt inttxt";
+        grid-template-columns: 1fr 1fr;
     }
-    #career-img {
-        grid-area: intimg;
-    }
-    #career-txt {
-        grid-area: inttxt;
-    }
-    #career-container {
-        width: 100vw;
-        display: grid;
-        grid-template-columns: repeat (1fr, 1fr);
-        grid-template-areas: "  carimg  cartxt ";
-    }
-    #career-img {
-        grid-area: carimg;
-    }
-    #career-txt {
-        grid-area: cartxt;
-    }
+
     #studyabroad-container {
-        width: 100vw;
         display: grid;
-        grid-template-columns: repeat (1fr, 1fr);
-        grid-template-areas: "  stutxt stuimg ";
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "stutxt stuimg";
     }
     #studyabroad-img {
         grid-area: stuimg;
     }
     #studyabroad-txt {
         grid-area: stutxt;
+    }
+
+    #career-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
