@@ -5,12 +5,12 @@
     padding: 0;
 }
 
-.navigation{
+.navigation {
     text-align: right;
     padding: 15px;
 }
 
-.navigation a{
+.navigation a {
     margin: 30px;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
@@ -18,50 +18,50 @@
     color: black;
 }
 
-.navigation a:hover{
+.navigation a:hover {
     color: #d7af00;
     text-decoration: underline;
 }
 
-#indexTitle h1{
+#indexTitle h1 {
     color: white;
     font-size: 4.5em;
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
 }
 
-#aboutCont{
-        padding: 3vw;
-    }
+#aboutCont {
+    padding: 3vw;
+}
 
-#aboutCont h1{
+#aboutCont h1 {
     font-family: 'Rubik', sans-serif;
     font-size: 3em;
 }
 
-#aboutCont p{
+#aboutCont p {
     font-family: 'Open Sans', sans-serif;
     margin-top: 4vh;
 }
 
-.line{
+.line {
     height: 7px;
     width: 120px;
     background-color: #d3ad07;
 }
 
-#indexMobileStructure{
+#indexMobileStructure {
     display: none;
 }
 
-#indexDesktopStructure{
-    background-image:url(images/study-edited.jpg);
+#indexDesktopStructure {
+    background-image: url(images/study-edited.jpg);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#indexDesktopStructure h1{
+#indexDesktopStructure h1 {
     color: #d3ad07;
     font-size: 4.5em;
     font-family: 'Rubik', sans-serif;
@@ -70,7 +70,7 @@
     /*/
 }
 
-#structureCircleCont{
+#structureCircleCont {
     text-align: center;
 }
 
@@ -90,123 +90,122 @@ g {
 }
 
 
-
 /*/Index.html/*/
+
+
 /*/Desktop Style/*/
-@media (min-width: 1001px){
 
-#headerCont{
-    background-image: url(images/kea-edited.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
+@media (min-width: 1001px) {
+    #headerCont {
+        background-image: url(images/kea-edited.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+    }
+    #indexTitle {
+        margin-top: 70px;
+        padding-right: 50vw;
+        text-align: right;
+    }
 }
 
-    #indexTitle{
-    margin-top: 70px;
-    padding-right: 50vw;
-    text-align: right;
-}
-}
 
 /*/Ipad style/*/
 
-@media (min-width: 601px) and (max-width: 1000px){
-
-    #headerCont{
-    background-image: url(images/kea-edited.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
+@media (min-width: 601px) and (max-width: 1000px) {
+    #headerCont {
+        background-image: url(images/kea-edited.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+    }
+    #indexTitle {
+        padding-right: 20vw;
+        margin-top: 70px;
+        text-align: right;
+    }
 }
 
-    #indexTitle{
-    padding-right: 20vw;
-    margin-top: 70px;
-    text-align: right;
-}
-}
 
 /*/Mobile Style/*/
-@media (max-width: 600px){
-    #headerCont{
-    background-image: url(images/kea-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-    #indexTitle{
-    margin: 200px 20px 0 0 ;
-    text-align: right;
-}
-    .navigation{
-    display:flex;
-    justify-content: space-between;
-    padding: 15px;
-}
-    .navigation a{
+
+@media (max-width: 600px) {
+    #headerCont {
+        background-image: url(images/kea-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    #indexTitle {
+        margin: 200px 20px 0 0;
+        text-align: right;
+    }
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    .navigation a {
         color: white;
     }
-
-    #aboutCont{
+    #aboutCont {
         padding: 7vw;
     }
-
-    #indexDesktopStructure{
+    #indexDesktopStructure {
         display: none;
     }
-
-    #indexMobileStructure{
+    #indexMobileStructure {
         display: block;
         font-family: 'Open Sans', sans-serif;
         font-size: 3em;
         text-align: center;
     }
-
-    #indexMobileStructure a{
+    #indexMobileStructure a {
         text-decoration: none;
         color: white;
     }
-
-    #indexMobileStructure a:hover{
+    #indexMobileStructure a:hover {
         text-decoration: underline;
         color: #d3ad07;
     }
-
-    #design, #business, #communication, #technology{
+    #design,
+    #business,
+    #communication,
+    #technology {
         padding: 30px;
     }
-
-    #design{
-        background-color:#011627;
+    #design {
+        background-color: #011627;
     }
-
-    #business{
-        background-color:#006b74;
+    #business {
+        background-color: #006b74;
     }
-
-    #communication{
-        background-color:#008c7f;
+    #communication {
+        background-color: #008c7f;
     }
-    #technology{
-        background-color:#00cb9f;
+    #technology {
+        background-color: #00cb9f;
     }
-
 }
 
+
 /*internship styling begin*/
+
+
 /*#intern-img, #intern-txt, #career-img, #career-txt {
      border:2px solid black;
 
 
 }*/
-.extra-text, .intern-heading {
-        margin:20px ;
+
+.extra-text,
+.intern-heading {
+    margin: 20px;
 }
 
-.extra-text{
+.extra-text {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -215,80 +214,70 @@ g {
     font-size: 3em;
 }
 
-#c-img, #i-img, #career-txt, #intern-txt {
-
-width:100vw;
-    height:auto;
-
+#c-img,
+#i-img,
+#career-txt,
+#intern-txt {
+    width: 100vw;
+    height: auto;
 }
 
-@media (min-width:601px){
-    #c-img, #i-img, #career-txt, #intern-txt {
-
-width:50vw;;
-    height:auto;
-
-}
-    .extra-text, .intern-heading {
-        margin:20px 20px 20px o;
-}
-.extra-text, .intern-heading {
-        margin:20px;
-}
-
-    #intern-container{
-        display:grid;
-                grid-template-columns: repeat (4, 1fr);
-                grid-template-areas:
-                " intimg intimg inttxt inttxt";
-
-
+@media (min-width:601px) {
+    #c-img,
+    #i-img,
+    #career-txt,
+    #intern-txt {
+        width: 50vw;
+        height: auto;
     }
-    #career-img{
-               grid-area:intimg;
-            }
-      #career-txt{
-               grid-area:inttxt;
-            }
-
-
-     #career-container{
-         width:100vw;
-         display:grid;
-                grid-template-columns: repeat (1fr, 1fr);
-                grid-template-areas:
-                "  carimg  cartxt ";
-
+    .extra-text,
+    .intern-heading {
+        margin: 20px 20px 20px o;
     }
-    #career-img{
-               grid-area:carimg;
-            }
-      #career-txt{
-               grid-area:cartxt;
-            }
-
-
-
-     #studyabroad-container{
-         width:100vw;
-         display:grid;
-                grid-template-columns: repeat (1fr, 1fr);
-                grid-template-areas:
-                "  stutxt stuimg ";
-
-
+    .extra-text,
+    .intern-heading {
+        margin: 20px;
     }
-    #studyabroad-img{
-               grid-area:stuimg;
-            }
-      #studyabroad-txt{
-               grid-area:stutxt;
-            }
+    #intern-container {
+        display: grid;
+        grid-template-columns: repeat (4, 1fr);
+        grid-template-areas: " intimg intimg inttxt inttxt";
+    }
+    #career-img {
+        grid-area: intimg;
+    }
+    #career-txt {
+        grid-area: inttxt;
+    }
+    #career-container {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat (1fr, 1fr);
+        grid-template-areas: "  carimg  cartxt ";
+    }
+    #career-img {
+        grid-area: carimg;
+    }
+    #career-txt {
+        grid-area: cartxt;
+    }
+    #studyabroad-container {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat (1fr, 1fr);
+        grid-template-areas: "  stutxt stuimg ";
+    }
+    #studyabroad-img {
+        grid-area: stuimg;
+    }
+    #studyabroad-txt {
+        grid-area: stutxt;
+    }
 }
-
 
 
 /*/Structure.html styling/*/
+
 .structure-container {
     width: 100%;
     height: 100vh;
@@ -309,17 +298,12 @@ width:50vw;;
     opacity: 1;
 }
 
-
 .structure-container {
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
-
-
-
 
 .first-semester-container,
 .second-semester-container,
@@ -359,12 +343,14 @@ width:50vw;;
     height: 100%;
     text-align: center;
 }
+
 .first-expand,
 .second-expand,
 .third-expand,
 .fourth-expand {
     width: 80vw;
 }
+
 #first-sem-rot,
 #second-sem-rot,
 #third-sem-rot,
@@ -372,4 +358,3 @@ width:50vw;;
 
 
 /*/Structure.styling end/*/
-
