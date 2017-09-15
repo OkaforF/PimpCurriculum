@@ -1,123 +1,203 @@
-
-body {
-  margin: 0;}
 /*Global Styling*/
 
-@font-face {
-    font-family: 'lemonmilkregular';
-    src: url('lemonmilk-webfont.woff2') format('woff2'),
-         url('lemonmilk-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 * {
-    font-family: "arial";
     margin: 0;
     padding: 0;
 }
 
 .navigation{
     text-align: right;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 1em 1em 0 5em;
+    padding: 15px;
 }
 
 .navigation a{
+    margin: 30px;
+    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
+    font-size: 1.5em;
+    color: black;
 }
 
 .navigation a:hover{
-    color: #FF431D;
+    color: #d7af00;
     text-decoration: underline;
 }
 
-/*/Index.html/*/
-
-#topCont{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-#keaLogo{
-    height: 80px;
-}
-
-#indexBody{
-}
-
-#header{
-    font-family: 'lemonmilkregular';
-    margin-top: 2em;
-    font-size: 5em;
-    color: #2B5FBF;
-
-}
-
-#subHeading{
-    margin-top: 1.5em;
-    font-size: 1.5em;
-}
-
-#headerCont{
-    text-align: center;
-    margin-top: 5em;
-}
-
-#arrowIcon{
-    margin-top: 3em;
-    height: 50px;
-    transform: rotate(90deg);
+#indexTitle h1{
+    color: white;
+    font-size: 4.5em;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
 }
 
 #aboutCont{
-    margin: 15em 1em 15em 1em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+        padding: 3vw;
+    }
 
 #aboutCont h1{
-    font-family: 'lemonmilkregular';
-    color: #4FFFCE;
-    margin: 0 0 1em 0.5em;
+    font-family: 'Rubik', sans-serif;
     font-size: 3em;
 }
 
-#aboutCont p {
-    font-size: 1.5em;
-    margin: 0 3em 0 1.5em;
+#aboutCont p{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 4vh;
 }
 
-#aboutCont img{
-    width: 100%;
+#line{
+    height: 7px;
+    width: 120px;
+    background-color: #d3ad07;
 }
 
+#indexMobileStructure{
+    display: none;
+}
 
-/*/Mobile Style/*/
+#indexDesktopStructure{
+    background-image:url(images/circle-nav-image.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-/*/Index page/*/
+#indexDesktopStructure h1{
+    color: #d3ad07;
+    font-size: 4.5em;
+    font-family: 'Rubik', sans-serif;
+    /*/
+    transform: rotate(-90deg);
+    /*/
+}
 
-
-/*Desktop Style*/
-
-/*/Index page/*/
-
-/*/Index.html end/*/
-
-
-/*/Structure.html styling/*/
-
-
-.navigation{
-    font-size: 1.5em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+#structureCircleCont{
     text-align: center;
 }
 
+#structureCircleCont svg {
+    height: 80vh;
+}
 
+.firstSem:hover,
+.secondSem:hover,
+.thirdSem:hover,
+.fourthSem:hover {
+    fill: blue;
+}
+
+g {
+    cursor: pointer;
+}
+
+
+
+/*/Index.html/*/
+/*/Desktop Style/*/
+@media (min-width: 1001px){
+
+#headerCont{
+    background-image: url(images/kea-edited.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+    #indexTitle{
+    margin-top: 70px;
+    padding-right: 50vw;
+    text-align: right;
+}
+}
+
+/*/Ipad style/*/
+
+@media (min-width: 601px) and (max-width: 1000px){
+
+    #headerCont{
+    background-image: url(images/kea-edited.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+    #indexTitle{
+    padding-right: 20vw;
+    margin-top: 70px;
+    text-align: right;
+}
+}
+
+/*/Mobile Style/*/
+@media (max-width: 600px){
+    #headerCont{
+    background-image: url(images/kea-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+    #indexTitle{
+    margin: 200px 20px 0 0 ;
+    text-align: right;
+}
+    .navigation{
+    display:flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+    .navigation a{
+        color: white;
+    }
+
+    #aboutCont{
+        padding: 7vw;
+    }
+
+    #indexDesktopStructure{
+        display: none;
+    }
+
+    #indexMobileStructure{
+        display: block;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 3em;
+        text-align: center;
+    }
+
+    #indexMobileStructure a{
+        text-decoration: none;
+        color: white;
+    }
+
+    #indexMobileStructure a:hover{
+        text-decoration: underline;
+        color: #d3ad07;
+    }
+
+    #design, #business, #communication, #technology{
+        padding: 30px;
+    }
+
+    #design{
+        background-color:#011627;
+    }
+
+    #business{
+        background-color:#006b74;
+    }
+
+    #communication{
+        background-color:#008c7f;
+    }
+    #technology{
+        background-color:#00cb9f;
+    }
+
+}
+
+
+/*/Structure.html styling/*/
 .structure-container {
     width: 100%;
     height: 100vh;
