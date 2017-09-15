@@ -203,11 +203,85 @@ body {
 /*/Structure.styling end/*/
 
 
-/*semester 1 styling begin*/
-.structure-container {
-    background-color: beige;
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+/*internship styling begin*/
+/*#intern-img, #intern-txt, #career-img, #career-txt {
+     border:2px solid black;
+
+
+}*/
+.extra-text, .intern-heading {
+        margin:20px ;
+}
+.intern-heading {
+
+}
+#c-img, #i-img, #career-txt, #intern-txt {
+
+width:100vw;
+    height:auto;
+
+}
+
+@media (min-width:600px){
+    #c-img, #i-img, #career-txt, #intern-txt {
+
+width:50vw;;
+    height:auto;
+
+}
+    .extra-text, .intern-heading {
+        margin:20px 20px 20px o;
+}
+.extra-text, .intern-heading {
+        margin:20px;
+}
+
+    #intern-container{
+        display:grid;
+                grid-template-columns: repeat (4, 1fr);
+                grid-template-areas:
+                " intimg intimg inttxt inttxt";
+
+
+    }
+    #career-img{
+               grid-area:intimg;
+            }
+      #career-txt{
+               grid-area:inttxt;
+            }
+
+
+     #career-container{
+         width:100vw;
+         display:grid;
+                grid-template-columns: repeat (1fr, 1fr);
+                grid-template-areas:
+                "  carimg  cartxt ";
+
+    }
+    #career-img{
+               grid-area:carimg;
+            }
+      #career-txt{
+               grid-area:cartxt;
+            }
+
+
+
+     #studyabroad-container{
+         width:100vw;
+         display:grid;
+                grid-template-columns: repeat (1fr, 1fr);
+                grid-template-areas:
+                "  stutxt stuimg ";
+
+
+    }
+    #studyabroad-img{
+               grid-area:stuimg;
+            }
+      #studyabroad-txt{
+               grid-area:stutxt;
+            }
 }
