@@ -1,5 +1,63 @@
+span {
+    font-family: 'Libre Baskerville', serif;
+}
+
+p,
+li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: -.5px;
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 2.5em;
+}
+
+h1 {
+    font-family: 'open sans', sans-serif;
+    font-weight: 300;
+    color: #464645;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: "Libre Baskervilee", serif;
+    font-size: 1.3em;
+    color: #464645;
+}
+
 body {
     margin: 0;
+}
+
+.semester-title {
+    font-family: "Rubik";
+    font-size: 3em;
+    color: #d3ad07;
+    font-weight: 700;
+}
+
+
+/*****STRUCTURE DESKTOP**********/
+
+.structure-body {
+    overflow: hidden;
+}
+
+.text-center {
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50%;
 }
 
 .structure-container {
@@ -12,6 +70,7 @@ body {
 
 .visibility {
     visibility: hidden;
+    display: none;
     opacity: 0;
     transition: opacity .150s;
     transition-delay: .150s;
@@ -19,7 +78,13 @@ body {
 
 .hide {
     visibility: visible;
+    display: block;
     opacity: 1;
+    background-color: white;
+}
+
+.semester-hide {
+    visibility: hidden;
 }
 
 .first-semester-container,
@@ -35,34 +100,145 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0.0, 0.6, 1);
     width: 0;
     min-width: 100%;
+    box-shadow: 20px 0px 5px #888888;
+    overflow: scroll;
+    background-color: #fffdf6;
 }
 
-.first-semester-container {
-    background-color: aquamarine;
+.pointer:hover {
+    cursor: pointer;
+    opacity: .98;
 }
 
-.second-semester-container {
-    background-color: beige;
-}
-
-.third-semester-container {
-    background-color: aquamarine;
-}
-
-.fourth-semester-container {
-    background-color: beige;
-}
-
-.structure-text-center {
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
+.blue-div {
+    background-color: #062d4c;
+    width: 50px;
     height: 100%;
+    position: fixed;
+}
+
+.modal-content {
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .first-expand,
 .second-expand,
 .third-expand,
 .fourth-expand {
-    width: 80vw;
+    width: 50vw;
+}
+
+.first-sem,
+.second-sem,
+.third-sem,
+.fourth-sem {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.first-sem {
+    background-image: url(images/1sem.jpg);
+}
+
+.second-sem {
+    background-image: url(images/2sem.jpg);
+}
+
+.third-sem {
+    background-image: url(images/3sem.jpg);
+}
+
+.fourth-sem {
+    background-image: url(images/4sem.jpg);
+}
+
+
+/***Structure Mobile*****/
+
+
+/*******STRUCTURE END**********/
+
+
+/********CORE AREAS************/
+
+.core-body {
+    overflow: hidden;
+}
+
+.core-container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    position: absolute;
+    overflow: hidden;
+}
+
+.core-title {
+    font-size: 4em;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+}
+
+.core-modal-content {
+    padding-left: 60px;
+    padding-right: 150px;
+}
+
+.comm-container,
+.design-container,
+.code-container,
+.business-container {
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    position: relative;
+    z-index: 4;
+    transition: height .200s;
+    transition-timing-function: cubic-bezier(0.4, 0.0, 0.6, 1);
+    height: 0;
+    min-height: 100%;
+}
+
+.comm-expand,
+.design-expand,
+.code-expand,
+.business-expand {
+    height: 70vh;
+}
+
+.comm-modal,
+.design-modal,
+.code-modal,
+.business-modal {
+    width: 100vw;
+    overflow: auto;
+    height: 100%;
+}
+
+.photo-comm,
+.photo-design,
+.photo-code,
+.photo-business {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo-comm {
+    background-image: url(images/communication.jpg);
+}
+
+.photo-design {
+    background-image: url(images/design.jpg);
+}
+
+.photo-code {
+    background-image: url(images/code.jpg);
+}
+
+.photo-business {
+    background-image: url(images/business.jpg);
 }
