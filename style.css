@@ -1,3 +1,19 @@
+
+body {
+    margin: 0;
+}
+
+
+/*Global Styling*/
+
+@font-face {
+    font-family: 'lemonmilkregular';
+    src: url('lemonmilk-webfont.woff2') format('woff2'), url('lemonmilk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /*Global Styling*/
 
 * {
@@ -11,14 +27,50 @@
 }
 
 .navigation a {
+
+
     margin: 30px;
     font-family: 'Open Sans', sans-serif;
+
     text-decoration: none;
     font-size: 1.5em;
     color: black;
 }
 
 .navigation a:hover {
+
+    color: #FF431D;
+    text-decoration: underline;
+}
+
+
+/*/Index.html/*/
+
+#topCont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#keaLogo {
+    height: 80px;
+}
+
+#indexBody {}
+
+#header {
+    font-family: 'lemonmilkregular';
+    margin-top: 2em;
+    font-size: 5em;
+    color: #2B5FBF;
+}
+
+#subHeading {
+    margin-top: 1.5em;
+    font-size: 1.5em;
+}
+
+#headerCont {
+
     color: #d7af00;
     text-decoration: underline;
 }
@@ -71,8 +123,27 @@
 }
 
 #structureCircleCont {
+
     text-align: center;
 }
+
+#arrowIcon {
+    margin-top: 3em;
+    height: 50px;
+    transform: rotate(90deg);
+}
+
+#aboutCont {
+    margin: 15em 1em 15em 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#aboutCont h1 {
+    font-family: 'lemonmilkregular';
+    color: #4FFFCE;
+    margin: 0 0 1em 0.5em;
+    font-size: 3em;
 
 #structureCircleCont svg {
     height: 80vh;
@@ -87,6 +158,7 @@
 
 g {
     cursor: pointer;
+
 }
 
 
@@ -111,6 +183,10 @@ g {
 }
 
 
+#aboutCont img {
+    width: 100%;
+
+
 /*/Ipad style/*/
 
 @media (min-width: 601px) and (max-width: 1000px) {
@@ -126,10 +202,15 @@ g {
         margin-top: 70px;
         text-align: right;
     }
+
 }
 
 
 /*/Mobile Style/*/
+
+
+
+/*/Index page/*/
 
 @media (max-width: 600px) {
     #headerCont {
@@ -192,7 +273,15 @@ g {
 }
 
 
+
 /*internship styling begin*/
+
+
+
+/*/Index page/*/
+
+
+/*/Index.html end/*/
 
 .extra-text,
 .intern-heading {
@@ -202,6 +291,7 @@ g {
 .extra-text {
     font-family: 'Open Sans', sans-serif;
 }
+
 
 .intern-heading {
     font-family: 'Rubik', sans-serif;
@@ -215,6 +305,15 @@ g {
     width: 100vw;
     height: auto;
 }
+
+
+.navigation {
+    font-size: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
 
 @media (min-width:601px) {
     #c-img,
@@ -338,3 +437,83 @@ g {
 
 
 /*/Structure.styling end/*/
+
+
+
+/*internship styling begin*/
+
+
+/*#intern-img, #intern-txt, #career-img, #career-txt {
+     border:2px solid black;
+
+
+}*/
+
+.extra-text,
+.intern-heading {
+    margin: 20px;
+}
+
+.intern-heading {}
+
+#i-img {
+    width: 100%;
+    height: auto;
+}
+
+.extra-text,
+.intern-heading {
+    width: 100%;
+    height: inherit;
+}
+
+@media (min-width:600px) {
+    #c-img,
+    #i-img,
+    #career-txt,
+    #intern-txt {
+        width: 50vw;
+        height: auto;
+    }
+    .extra-text,
+    .intern-heading {
+        margin: 0 10px 0 10px;
+    }
+    #intern-container {
+        width: 100vw;
+        display: grid;
+        grid-template-areas: " intimg  inttxt";
+        grid-gap: 10px;
+    }
+    #intern-img {
+        grid-area: intimg;
+    }
+    #intern-txt {
+        grid-area: inttxt;
+    }
+    #career-container {
+        display: grid;
+        grid-template-areas: "carimg  cartxt";
+    }
+    #career-img {
+        grid-area: carimg;
+    }
+    #career-txt {
+        grid-area: cartxt;
+    }
+    #studyabroad-container {
+        width: 100vw;
+        display: grid;
+        grid-template-areas: "  stutxt stuimg ";
+    }
+    #studyabroad-img {
+        grid-area: stuimg;
+    }
+    #studyabroad-txt {
+        grid-area: stutxt;
+    }
+}
+
+
+/*inernship style end*/
+
