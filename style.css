@@ -225,7 +225,7 @@ width:100vw;
 @media (min-width:600px){
     #c-img, #i-img, #career-txt, #intern-txt {
 
-width:50vw;;
+width:50vw;
     height:auto;
 
 }
@@ -233,7 +233,7 @@ width:50vw;;
         margin:20px 20px 20px o;
 }
 .extra-text, .intern-heading {
-        margin:20px;
+        margin:0 10px 0 10px ;
 }
 
     #intern-container{
@@ -285,3 +285,4 @@ width:50vw;;
                grid-area:stutxt;
             }
 }
+/*inernship style end*/
