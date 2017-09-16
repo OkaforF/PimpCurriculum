@@ -1,15 +1,15 @@
-
 body {
-  margin: 0;}
+    margin: 0;
+}
+
+
 /*Global Styling*/
 
 @font-face {
     font-family: 'lemonmilkregular';
-    src: url('lemonmilk-webfont.woff2') format('woff2'),
-         url('lemonmilk-webfont.woff') format('woff');
+    src: url('lemonmilk-webfont.woff2') format('woff2'), url('lemonmilk-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 * {
@@ -18,67 +18,66 @@ body {
     padding: 0;
 }
 
-.navigation{
+.navigation {
     text-align: right;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 1em 1em 0 5em;
 }
 
-.navigation a{
+.navigation a {
     text-decoration: none;
 }
 
-.navigation a:hover{
+.navigation a:hover {
     color: #FF431D;
     text-decoration: underline;
 }
 
+
 /*/Index.html/*/
 
-#topCont{
+#topCont {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-#keaLogo{
+#keaLogo {
     height: 80px;
 }
 
-#indexBody{
-}
+#indexBody {}
 
-#header{
+#header {
     font-family: 'lemonmilkregular';
     margin-top: 2em;
     font-size: 5em;
     color: #2B5FBF;
-
 }
 
-#subHeading{
+#subHeading {
     margin-top: 1.5em;
     font-size: 1.5em;
 }
 
-#headerCont{
+#headerCont {
     text-align: center;
     margin-top: 5em;
 }
 
-#arrowIcon{
+#arrowIcon {
     margin-top: 3em;
     height: 50px;
     transform: rotate(90deg);
 }
 
-#aboutCont{
+#aboutCont {
     margin: 15em 1em 15em 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-#aboutCont h1{
+#aboutCont h1 {
     font-family: 'lemonmilkregular';
     color: #4FFFCE;
     margin: 0 0 1em 0.5em;
@@ -90,33 +89,34 @@ body {
     margin: 0 3em 0 1.5em;
 }
 
-#aboutCont img{
+#aboutCont img {
     width: 100%;
 }
 
 
 /*/Mobile Style/*/
 
+
 /*/Index page/*/
 
 
 /*Desktop Style*/
 
+
 /*/Index page/*/
+
 
 /*/Index.html end/*/
 
 
 /*/Structure.html styling/*/
 
-
-.navigation{
+.navigation {
     font-size: 1.5em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
 }
-
 
 .structure-container {
     width: 100%;
@@ -138,17 +138,12 @@ body {
     opacity: 1;
 }
 
-
 .structure-container {
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
-
-
-
 
 .first-semester-container,
 .second-semester-container,
@@ -188,12 +183,14 @@ body {
     height: 100%;
     text-align: center;
 }
+
 .first-expand,
 .second-expand,
 .third-expand,
 .fourth-expand {
     width: 80vw;
 }
+
 #first-sem-rot,
 #second-sem-rot,
 #third-sem-rot,
@@ -204,85 +201,78 @@ body {
 
 
 /*internship styling begin*/
+
+
 /*#intern-img, #intern-txt, #career-img, #career-txt {
      border:2px solid black;
 
 
 }*/
-.extra-text, .intern-heading {
-        margin:20px ;
-}
+
+.extra-text,
 .intern-heading {
-
-}
-#c-img, #i-img, #career-txt, #intern-txt {
-
-width:100vw;
-    height:auto;
-
+    margin: 20px;
 }
 
-@media (min-width:600px){
-    #c-img, #i-img, #career-txt, #intern-txt {
+.intern-heading {}
 
-width:50vw;
-    height:auto;
-
-}
-    .extra-text, .intern-heading {
-        margin:20px 20px 20px o;
-}
-.extra-text, .intern-heading {
-        margin:0 10px 0 10px ;
+#i-img {
+    width: 100%;
+    height: auto;
 }
 
-    #intern-container{
-        display:grid;
-                grid-template-columns: repeat (4, 1fr);
-                grid-template-areas:
-                " intimg intimg inttxt inttxt";
+.extra-text,
+.intern-heading {
+    width: 100%;
+    height: inherit;
+}
 
-
+@media (min-width:600px) {
+    #c-img,
+    #i-img,
+    #career-txt,
+    #intern-txt {
+        width: 50vw;
+        height: auto;
     }
-    #career-img{
-               grid-area:intimg;
-            }
-      #career-txt{
-               grid-area:inttxt;
-            }
-
-
-     #career-container{
-         width:100vw;
-         display:grid;
-                grid-template-columns: repeat (1fr, 1fr);
-                grid-template-areas:
-                "  carimg  cartxt ";
-
+    .extra-text,
+    .intern-heading {
+        margin: 0 10px 0 10px;
     }
-    #career-img{
-               grid-area:carimg;
-            }
-      #career-txt{
-               grid-area:cartxt;
-            }
-
-
-
-     #studyabroad-container{
-         width:100vw;
-         display:grid;
-                grid-template-columns: repeat (1fr, 1fr);
-                grid-template-areas:
-                "  stutxt stuimg ";
-
-
+    #intern-container {
+        width: 100vw;
+        display: grid;
+        grid-template-areas: " intimg  inttxt";
+        grid-gap: 10px;
     }
-    #studyabroad-img{
-               grid-area:stuimg;
-            }
-      #studyabroad-txt{
-               grid-area:stutxt;
-            }
+    #intern-img {
+        grid-area: intimg;
+    }
+    #intern-txt {
+        grid-area: inttxt;
+    }
+    #career-container {
+        display: grid;
+        grid-template-areas: "carimg  cartxt";
+    }
+    #career-img {
+        grid-area: carimg;
+    }
+    #career-txt {
+        grid-area: cartxt;
+    }
+    #studyabroad-container {
+        width: 100vw;
+        display: grid;
+        grid-template-areas: "  stutxt stuimg ";
+    }
+    #studyabroad-img {
+        grid-area: stuimg;
+    }
+    #studyabroad-txt {
+        grid-area: stutxt;
+    }
 }
+
+
 /*inernship style end*/
