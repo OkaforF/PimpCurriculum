@@ -231,6 +231,7 @@ g {
     .navigation a {
         color: white;
         font-size: 1.2em;
+        margin: 0;
     }
     #aboutCont {
         padding: 7vw;
@@ -357,83 +358,328 @@ g {
 
 /*/Structure.html styling/*/
 
-.structure-container {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    position: absolute;
+span {
+        font-family: 'Libre Baskerville', serif;
+    }
+
+    .pFont,
+    li {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        letter-spacing: -.5px;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .h2Font {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 700;
+        color: white;
+        font-size: 2.5em;
+    }
+
+    .h1Font {
+        font-family: 'open sans', sans-serif;
+        font-weight: 300;
+        color: #464645;
+        font-size: 2em;
+    }
+
+    .h3Font {
+        font-family: "Libre Baskervilee", serif;
+        font-size: 1.3em;
+        color: #464645;
+    }
+
+.semester-title {
+        font-family: "Rubik";
+        font-size: 3em;
+        color: #d3ad07;
+        font-weight: 700;
+    }
+
+/*****STRUCTURE DESKTOP**********/
+
+    .structure-body {
+        overflow: hidden;
+    }
+
+    .text-center {
+        width: 20vw;
+        display: flex;
+        align-items: center;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 50%;
+    }
+
+/*/Structure.html styling/*/
+    .structure-container {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        position: absolute;
+    }
+
+    .visibility {
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+        transition: opacity .150s;
+        transition-delay: .150s;
+    }
+
+    .hide {
+        visibility: visible;
+        display: block;
+        opacity: 1;
+        background-color: white;
+    }
+
+    .semester-hide {
+        visibility: hidden;
+    }
+
+    .first-semester-container,
+    .second-semester-container,
+    .third-semester-container,
+    .fourth-semester-container {
+        justify-content: center;
+        display: flex;
+        height: 100%;
+        position: relative;
+        z-index: 4;
+        transition: width .200s;
+        transition-timing-function: cubic-bezier(0.4, 0.0, 0.6, 1);
+        width: 0;
+        min-width: 100%;
+        box-shadow: 20px 0px 5px #888888;
+        overflow: scroll;
+        background-color: #fffdf6;
+    }
+
+    .pointer:hover {
+        cursor: pointer;
+        opacity: .98;
+    }
+
+    .blue-div {
+        background-color: #062d4c;
+        width: 50px;
+        height: 100%;
+        position: fixed;
+    }
+
+    .modal-content {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .first-expand,
+    .second-expand,
+    .third-expand,
+    .fourth-expand {
+        width: 50vw;
+    }
+
+    .first-sem,
+    .second-sem,
+    .third-sem,
+    .fourth-sem {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .first-sem {
+        background-image: url(images/1sem.jpg);
+    }
+
+    .second-sem {
+        background-image: url(images/2sem.jpg);
+    }
+
+    .third-sem {
+        background-image: url(images/3sem.jpg);
+    }
+
+    .fourth-sem {
+        background-image: url(images/4sem.jpg);
+    }
+    /***Structure Mobile*****/
+
+    @media only screen and (max-width: 600px) {
+        .navText a{
+        color: black;
+        margin: 0;
+        }
+        .navText{
+        height: 4vh;
+    }
+        .structure-container {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: none;
+        }
+        .first-semester-container,
+        .second-semester-container,
+        .third-semester-container,
+        .fourth-semester-container {
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            z-index: 4;
+            transition: width .200s;
+            transition-timing-function: cubic-bezier(0.4, 0.0, 0.6, 1);
+            width: 0;
+            min-width: 100%;
+            box-shadow: 20px 0px 5px #888888;
+            overflow: scroll;
+            background-color: #fffdf6;
+        }
+        .first-expand,
+        .second-expand,
+        .third-expand,
+        .fourth-expand {
+            width: 100vw;
+            height: 60vh;
+            background-image: none;
+        }
+        .text-center {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            transform: rotate(0deg);
+            position: absolute;
+        }
+        .blue-div {
+            display: none;
+        }
+        .modal-content {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .first-sem {
+            background-image: url(images/1sem-mobile.jpg);
+        }
+        .second-sem {
+            background-image: url(images/2sem-mobile.jpg);
+        }
+        .third-sem {
+            background-image: url(images/3sem-mobile.jpg);
+        }
+        .fourth-sem {
+            background-image: url(images/4sem-mobile.jpg);
+        }
+    }
+    /*******STRUCTURE END**********/
+    /********CORE AREAS************/
+
+/*/Core Areas Mobile/*/
+
+@media only screen and (max-width: 600px) {
+        .navText a{
+        color: black;
+        margin: 0;
+        }
+    .navText{
+        height: 4vh;
+    }
 }
 
-.visibility {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .150s;
-    transition-delay: .150s;
-}
+    .core-body {
+        overflow: hidden;
+    }
 
-.hide {
-    visibility: visible;
-    opacity: 1;
-}
+    .core-container {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        position: absolute;
+        overflow: hidden;
+    }
 
-.structure-container {
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+    .core-title {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 25%;
+    }
 
-.first-semester-container,
-.second-semester-container,
-.third-semester-container,
-.fourth-semester-container {
-    justify-content: center;
-    display: flex;
-    height: 100%;
-    position: relative;
-    z-index: 4;
-    transition: width .200s;
-    transition-timing-function: cubic-bezier(0.4, 0.0, 0.6, 1);
-    width: 0;
-    min-width: 100%;
-}
+    .core-modal-content {
+        padding-left: 60px;
+        padding-right: 150px;
+    }
 
-.first-semester-container {
-    background-color: aquamarine;
-}
+    .comm-container,
+    .design-container,
+    .code-container,
+    .business-container {
+        justify-content: center;
+        display: flex;
+        height: 100%;
+        position: relative;
+        z-index: 4;
+        transition: height .200s;
+        transition-timing-function: cubic-bezier(0.4, 0.0, 0.6, 1);
+        height: 0;
+        min-height: 100%;
+    }
 
-.second-semester-container {
-    background-color: beige;
-}
+    .comm-expand,
+    .design-expand,
+    .code-expand,
+    .business-expand {
+        height: 70vh;
+    }
 
-.third-semester-container {
-    background-color: aquamarine;
-}
+    .comm-modal,
+    .design-modal,
+    .code-modal,
+    .business-modal {
+        width: 100vw;
+        overflow: auto;
+        height: 100%;
+    }
 
-.fourth-semester-container {
-    background-color: beige;
-}
+    .photo-comm,
+    .photo-design,
+    .photo-code,
+    .photo-business {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
-.structure-text-center {
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-}
+    .photo-comm {
+        background-image: url(images/communication.jpg);
+    }
 
-.first-expand,
-.second-expand,
-.third-expand,
-.fourth-expand {
-    width: 80vw;
-}
+    .photo-design {
+        background-image: url(images/design.jpg);
+    }
 
-#first-sem-rot,
-#second-sem-rot,
-#third-sem-rot,
-#fourth-sem-rot {}
+    .photo-code {
+        background-image: url(images/code.jpg);
+    }
+
+    .photo-business {
+        background-image: url(images/business.jpg);
+        =======text-align: center;
+    }
+
+    .first-expand,
+    .second-expand,
+    .third-expand,
+    .fourth-expand {
+        width: 60vw;
+    }
+
 
 
 /*/Structure.styling end/*/
