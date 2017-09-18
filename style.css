@@ -113,6 +113,12 @@ footer a {
 
 /*/Index.html/*/
 
+.kea-logo {
+    z-index: 6;
+    position: absolute;
+    margin: 1.5%;
+}
+
 
 /*/Desktop Style/*/
 
@@ -125,7 +131,7 @@ footer a {
         position: relative;
     }
     #indexTitle {
-        margin-top: 70px;
+        margin-top: 25vh;
         padding-right: 50vw;
         text-align: right;
     }
@@ -143,10 +149,14 @@ footer a {
         position: relative;
     }
     #indexTitle {
-        padding-right: 20vw;
-        margin-top: 70px;
+        padding-right: 25vw;
+        margin-top: 25vh;
         text-align: right;
     }
+/*tamas*/
+    .kea-logo {
+      display: none;}
+  /*****/
     #footertext {
         color: white;
         text-align: center;
@@ -214,6 +224,15 @@ footer a {
     }
     #technology {
         background-color: #00cb9f;
+    }
+    .kea-logo {
+        display: none;
+    }
+    #indexTitle h1 {
+        color: white;
+        font-size: 3em;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 700;
     }
 }
 
