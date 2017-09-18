@@ -1,19 +1,3 @@
-
-body {
-    margin: 0;
-}
-
-
-/*Global Styling*/
-
-@font-face {
-    font-family: 'lemonmilkregular';
-    src: url('lemonmilk-webfont.woff2') format('woff2'), url('lemonmilk-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 /*Global Styling*/
 
 * {
@@ -27,50 +11,14 @@ body {
 }
 
 .navigation a {
-
-
     margin: 30px;
     font-family: 'Open Sans', sans-serif;
-
     text-decoration: none;
     font-size: 1.5em;
     color: black;
 }
 
 .navigation a:hover {
-
-    color: #FF431D;
-    text-decoration: underline;
-}
-
-
-/*/Index.html/*/
-
-#topCont {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-#keaLogo {
-    height: 80px;
-}
-
-#indexBody {}
-
-#header {
-    font-family: 'lemonmilkregular';
-    margin-top: 2em;
-    font-size: 5em;
-    color: #2B5FBF;
-}
-
-#subHeading {
-    margin-top: 1.5em;
-    font-size: 1.5em;
-}
-
-#headerCont {
-
     color: #d7af00;
     text-decoration: underline;
 }
@@ -123,27 +71,8 @@ body {
 }
 
 #structureCircleCont {
-
     text-align: center;
 }
-
-#arrowIcon {
-    margin-top: 3em;
-    height: 50px;
-    transform: rotate(90deg);
-}
-
-#aboutCont {
-    margin: 15em 1em 15em 1em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-#aboutCont h1 {
-    font-family: 'lemonmilkregular';
-    color: #4FFFCE;
-    margin: 0 0 1em 0.5em;
-    font-size: 3em;
 
 #structureCircleCont svg {
     height: 80vh;
@@ -158,7 +87,6 @@ body {
 
 g {
     cursor: pointer;
-
 }
 
 
@@ -183,10 +111,6 @@ g {
 }
 
 
-#aboutCont img {
-    width: 100%;
-
-
 /*/Ipad style/*/
 
 @media (min-width: 601px) and (max-width: 1000px) {
@@ -202,15 +126,10 @@ g {
         margin-top: 70px;
         text-align: right;
     }
-
 }
 
 
 /*/Mobile Style/*/
-
-
-
-/*/Index page/*/
 
 @media (max-width: 600px) {
     #headerCont {
@@ -274,15 +193,7 @@ g {
 }
 
 
-
 /*internship styling begin*/
-
-
-
-/*/Index page/*/
-
-
-/*/Index.html end/*/
 
 .extra-text,
 .intern-heading {
@@ -292,7 +203,6 @@ g {
 .extra-text {
     font-family: 'Open Sans', sans-serif;
 }
-
 
 .intern-heading {
     font-family: 'Rubik', sans-serif;
@@ -306,15 +216,6 @@ g {
     width: 100vw;
     height: auto;
 }
-
-
-.navigation {
-    font-size: 1.5em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
-}
-
 
 @media (min-width:601px) {
     #c-img,
@@ -336,7 +237,6 @@ g {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
     #studyabroad-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -348,7 +248,6 @@ g {
     #studyabroad-txt {
         grid-area: stutxt;
     }
-
     #career-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -359,97 +258,184 @@ g {
 /*/Structure.html styling/*/
 
 span {
-        font-family: 'Libre Baskerville', serif;
-    }
+    font-family: 'Libre Baskerville', serif;
+}
 
-    .pFont,
-    li {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
-        letter-spacing: -.5px;
-    }
+.pFont,
+li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: -.5px;
+}
 
-    li {
-        list-style: none;
-    }
+li {
+    list-style: none;
+}
 
-    .h2Font {
-        font-family: 'Rubik', sans-serif;
-        font-weight: 700;
-        color: white;
-        font-size: 2.5em;
-    }
+.h2Font {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 2.5em;
+}
 
-    .h1Font {
-        font-family: 'open sans', sans-serif;
-        font-weight: 300;
-        color: #464645;
-        font-size: 2em;
-    }
+.h1Font {
+    font-family: 'open sans', sans-serif;
+    font-weight: 300;
+    color: #464645;
+    font-size: 2em;
+}
 
-    .h3Font {
-        font-family: "Libre Baskervilee", serif;
-        font-size: 1.3em;
-        color: #464645;
-    }
+.h3Font {
+    font-family: "Libre Baskervilee", serif;
+    font-size: 1.3em;
+    color: #464645;
+}
 
 .semester-title {
-        font-family: "Rubik";
-        font-size: 3em;
-        color: #d3ad07;
-        font-weight: 700;
-    }
+    font-family: "Rubik";
+    font-size: 3em;
+    color: #d3ad07;
+    font-weight: 700;
+}
+
 
 /*****STRUCTURE DESKTOP**********/
 
-    .structure-body {
-        overflow: hidden;
-    }
+.structure-body {
+    overflow: hidden;
+}
 
-    .text-center {
-        width: 20vw;
-        display: flex;
-        align-items: center;
-        transform: rotate(-90deg);
-        position: absolute;
-        top: 50%;
-    }
+.text-center {
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50%;
+}
+
 
 /*/Structure.html styling/*/
+
+.structure-container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: absolute;
+}
+
+.visibility {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+    transition: opacity .150s;
+    transition-delay: .150s;
+}
+
+.hide {
+    visibility: visible;
+    display: block;
+    opacity: 1;
+    background-color: white;
+}
+
+.semester-hide {
+    visibility: hidden;
+}
+
+.first-semester-container,
+.second-semester-container,
+.third-semester-container,
+.fourth-semester-container {
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    position: relative;
+    z-index: 4;
+    transition: width .200s;
+    transition-timing-function: cubic-bezier(0.4, 0.0, 0.6, 1);
+    width: 0;
+    min-width: 100%;
+    box-shadow: 20px 0px 5px #888888;
+    overflow: scroll;
+    background-color: #fffdf6;
+}
+
+.pointer:hover {
+    cursor: pointer;
+    opacity: .98;
+}
+
+.blue-div {
+    background-color: #062d4c;
+    width: 50px;
+    height: 100%;
+    position: fixed;
+}
+
+.modal-content {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.first-expand,
+.second-expand,
+.third-expand,
+.fourth-expand {
+    width: 50vw;
+}
+
+.first-sem,
+.second-sem,
+.third-sem,
+.fourth-sem {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.first-sem {
+    background-image: url(images/1sem.jpg);
+}
+
+.second-sem {
+    background-image: url(images/2sem.jpg);
+}
+
+.third-sem {
+    background-image: url(images/3sem.jpg);
+}
+
+.fourth-sem {
+    background-image: url(images/4sem.jpg);
+}
+
+
+/***Structure Mobile*****/
+
+@media only screen and (max-width: 600px) {
+    .navText a {
+        color: black;
+        margin: 0;
+    }
+    .navText {
+        height: 4vh;
+    }
     .structure-container {
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        position: absolute;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: none;
     }
-
-    .visibility {
-        visibility: hidden;
-        display: none;
-        opacity: 0;
-        transition: opacity .150s;
-        transition-delay: .150s;
-    }
-
-    .hide {
-        visibility: visible;
-        display: block;
-        opacity: 1;
-        background-color: white;
-    }
-
-    .semester-hide {
-        visibility: hidden;
-    }
-
     .first-semester-container,
     .second-semester-container,
     .third-semester-container,
     .fourth-semester-container {
         justify-content: center;
         display: flex;
-        height: 100%;
+        flex-direction: row;
         position: relative;
         z-index: 4;
         transition: width .200s;
@@ -460,306 +446,148 @@ span {
         overflow: scroll;
         background-color: #fffdf6;
     }
-
-    .pointer:hover {
-        cursor: pointer;
-        opacity: .98;
-    }
-
-    .blue-div {
-        background-color: #062d4c;
-        width: 50px;
-        height: 100%;
-        position: fixed;
-    }
-
-    .modal-content {
-        margin-left: 60px;
-        margin-right: 60px;
-    }
-
     .first-expand,
     .second-expand,
     .third-expand,
     .fourth-expand {
-        width: 50vw;
+        width: 100vw;
+        height: 60vh;
+        background-image: none;
     }
-
-    .first-sem,
-    .second-sem,
-    .third-sem,
-    .fourth-sem {
-        background-size: cover;
-        background-repeat: no-repeat;
+    .text-center {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        transform: rotate(0deg);
+        position: absolute;
     }
-
+    .blue-div {
+        display: none;
+    }
+    .modal-content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     .first-sem {
-        background-image: url(images/1sem.jpg);
+        background-image: url(images/1sem-mobile.jpg);
     }
-
     .second-sem {
-        background-image: url(images/2sem.jpg);
+        background-image: url(images/2sem-mobile.jpg);
     }
-
     .third-sem {
-        background-image: url(images/3sem.jpg);
+        background-image: url(images/3sem-mobile.jpg);
     }
-
     .fourth-sem {
-        background-image: url(images/4sem.jpg);
+        background-image: url(images/4sem-mobile.jpg);
     }
-    /***Structure Mobile*****/
+}
 
-    @media only screen and (max-width: 600px) {
-        .navText a{
-        color: black;
-        margin: 0;
-        }
-        .navText{
-        height: 4vh;
-    }
-        .structure-container {
-            width: 100vw;
-            height: 100vh;
-            display: grid;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            grid-template-columns: none;
-        }
-        .first-semester-container,
-        .second-semester-container,
-        .third-semester-container,
-        .fourth-semester-container {
-            justify-content: center;
-            display: flex;
-            flex-direction: row;
-            position: relative;
-            z-index: 4;
-            transition: width .200s;
-            transition-timing-function: cubic-bezier(0.4, 0.0, 0.6, 1);
-            width: 0;
-            min-width: 100%;
-            box-shadow: 20px 0px 5px #888888;
-            overflow: scroll;
-            background-color: #fffdf6;
-        }
-        .first-expand,
-        .second-expand,
-        .third-expand,
-        .fourth-expand {
-            width: 100vw;
-            height: 60vh;
-            background-image: none;
-        }
-        .text-center {
-            width: 100vw;
-            display: flex;
-            align-items: center;
-            transform: rotate(0deg);
-            position: absolute;
-        }
-        .blue-div {
-            display: none;
-        }
-        .modal-content {
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-        .first-sem {
-            background-image: url(images/1sem-mobile.jpg);
-        }
-        .second-sem {
-            background-image: url(images/2sem-mobile.jpg);
-        }
-        .third-sem {
-            background-image: url(images/3sem-mobile.jpg);
-        }
-        .fourth-sem {
-            background-image: url(images/4sem-mobile.jpg);
-        }
-    }
-    /*******STRUCTURE END**********/
-    /********CORE AREAS************/
+
+/*******STRUCTURE END**********/
+
+
+/********CORE AREAS************/
+
 
 /*/Core Areas Mobile/*/
 
 @media only screen and (max-width: 600px) {
-        .navText a{
+    .navText a {
         color: black;
         margin: 0;
-        }
-    .navText{
+    }
+    .navText {
         height: 4vh;
     }
 }
 
-    .core-body {
-        overflow: hidden;
-    }
+.core-body {
+    overflow: hidden;
+}
 
-    .core-container {
-        width: 100%;
-        height: 100vh;
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        position: absolute;
-        overflow: hidden;
-    }
+.core-container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    position: absolute;
+    overflow: hidden;
+}
 
-    .core-title {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        top: 25%;
-    }
+.core-title {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+}
 
-    .core-modal-content {
-        padding-left: 60px;
-        padding-right: 150px;
-    }
+.core-modal-content {
+    padding-left: 60px;
+    padding-right: 150px;
+}
 
-    .comm-container,
-    .design-container,
-    .code-container,
-    .business-container {
-        justify-content: center;
-        display: flex;
-        height: 100%;
-        position: relative;
-        z-index: 4;
-        transition: height .200s;
-        transition-timing-function: cubic-bezier(0.4, 0.0, 0.6, 1);
-        height: 0;
-        min-height: 100%;
-    }
+.comm-container,
+.design-container,
+.code-container,
+.business-container {
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    position: relative;
+    z-index: 4;
+    transition: height .200s;
+    transition-timing-function: cubic-bezier(0.4, 0.0, 0.6, 1);
+    height: 0;
+    min-height: 100%;
+}
 
-    .comm-expand,
-    .design-expand,
-    .code-expand,
-    .business-expand {
-        height: 70vh;
-    }
+.comm-expand,
+.design-expand,
+.code-expand,
+.business-expand {
+    height: 70vh;
+}
 
-    .comm-modal,
-    .design-modal,
-    .code-modal,
-    .business-modal {
-        width: 100vw;
-        overflow: auto;
-        height: 100%;
-    }
+.comm-modal,
+.design-modal,
+.code-modal,
+.business-modal {
+    width: 100vw;
+    overflow: auto;
+    height: 100%;
+}
 
-    .photo-comm,
-    .photo-design,
-    .photo-code,
-    .photo-business {
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+.photo-comm,
+.photo-design,
+.photo-code,
+.photo-business {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-    .photo-comm {
-        background-image: url(images/communication.jpg);
-    }
+.photo-comm {
+    background-image: url(images/communication.jpg);
+}
 
-    .photo-design {
-        background-image: url(images/design.jpg);
-    }
+.photo-design {
+    background-image: url(images/design.jpg);
+}
 
-    .photo-code {
-        background-image: url(images/code.jpg);
-    }
+.photo-code {
+    background-image: url(images/code.jpg);
+}
 
-    .photo-business {
-        background-image: url(images/business.jpg);
-        =======text-align: center;
-    }
+.photo-business {
+    background-image: url(images/business.jpg);
+    =======text-align: center;
+}
 
-    .first-expand,
-    .second-expand,
-    .third-expand,
-    .fourth-expand {
-        width: 60vw;
-    }
-
+.first-expand,
+.second-expand,
+.third-expand,
+.fourth-expand {
+    width: 60vw;
+}
 
 
 /*/Structure.styling end/*/
-
-
-
-/*internship styling begin*/
-
-
-/*#intern-img, #intern-txt, #career-img, #career-txt {
-     border:2px solid black;
-
-
-}*/
-
-.extra-text,
-.intern-heading {
-    margin: 20px;
-}
-
-.intern-heading {}
-
-#i-img {
-    width: 100%;
-    height: auto;
-}
-
-.extra-text,
-.intern-heading {
-    width: 100%;
-    height: inherit;
-}
-
-@media (min-width:600px) {
-    #c-img,
-    #i-img,
-    #career-txt,
-    #intern-txt {
-        width: 50vw;
-        height: auto;
-    }
-    .extra-text,
-    .intern-heading {
-        margin: 0 10px 0 10px;
-    }
-    #intern-container {
-        width: 100vw;
-        display: grid;
-        grid-template-areas: " intimg  inttxt";
-        grid-gap: 10px;
-    }
-    #intern-img {
-        grid-area: intimg;
-    }
-    #intern-txt {
-        grid-area: inttxt;
-    }
-    #career-container {
-        display: grid;
-        grid-template-areas: "carimg  cartxt";
-    }
-    #career-img {
-        grid-area: carimg;
-    }
-    #career-txt {
-        grid-area: cartxt;
-    }
-    #studyabroad-container {
-        width: 100vw;
-        display: grid;
-        grid-template-areas: "  stutxt stuimg ";
-    }
-    #studyabroad-img {
-        grid-area: stuimg;
-    }
-    #studyabroad-txt {
-        grid-area: stutxt;
-    }
-}
-
-
-/*inernship style end*/
-
