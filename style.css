@@ -23,6 +23,26 @@
     text-decoration: underline;
 }
 
+.navText {
+    text-align: right;
+    background-color: #d7af00;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+.navText a{
+    text-decoration: none;
+    color: white;
+    margin: 30px;
+}
+
+.navText a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
 #indexTitle h1 {
     color: white;
     font-size: 4.5em;
@@ -152,6 +172,8 @@ g {
         font-size: 1.2em;
         margin: 0;
     }
+
+
     #aboutCont {
         padding: 7vw;
     }
@@ -415,13 +437,20 @@ li {
 /***Structure Mobile*****/
 
 @media only screen and (max-width: 600px) {
-    .navText a {
-        color: black;
-        margin: 0;
+
+    .navText{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        font-size: 1em;
+        height: 7vh;
     }
-    .navText {
-        height: 4vh;
+
+    .navText a{
+        margin: 10px;
+        font-size: 1.2em;
     }
+
     .structure-container {
         width: 100vw;
         height: 100vh;
@@ -492,13 +521,8 @@ li {
 /*/Core Areas Mobile/*/
 
 @media only screen and (max-width: 600px) {
-    .navText a {
-        color: black;
-        margin: 0;
-    }
-    .navText {
-        height: 4vh;
-    }
+
+
 }
 
 .core-body {
