@@ -28,17 +28,17 @@
     background-color: #d7af00;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding: 15px;
 }
 
-.navText a{
+.navText a {
     text-decoration: none;
     color: white;
     margin: 30px;
 }
 
-.navText a:hover{
+.navText a:hover {
     color: black;
     text-decoration: underline;
 }
@@ -147,11 +147,11 @@ footer a {
         background-image: url(images/kea-edited.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
+        height: 86vh;
         position: relative;
     }
     #indexTitle {
-        margin-top: 25vh;
+        margin-top: 20vh;
         padding-right: 50vw;
         text-align: right;
     }
@@ -173,13 +173,17 @@ footer a {
         margin-top: 25vh;
         text-align: right;
     }
-/*tamas*/
+    /*tamas*/
     .kea-logo {
-      display: none;}
-  /*****/
+        display: none;
+    }
+    /*****/
     #footertext {
         color: white;
         text-align: center;
+    }
+    .navText a {
+        font-size: 1em;
     }
 }
 
@@ -207,8 +211,6 @@ footer a {
         font-size: 1.2em;
         margin: 0;
     }
-
-
     #aboutCont {
         padding: 7vw;
     }
@@ -481,20 +483,17 @@ li {
 /***Structure Mobile*****/
 
 @media only screen and (max-width: 600px) {
-
-    .navText{
+    .navText {
         display: flex;
         justify-content: space-between;
         padding: 0;
         font-size: 1em;
         height: 7vh;
     }
-
-    .navText a{
+    .navText a {
         margin: 10px;
         font-size: 1.2em;
     }
-
     .structure-container {
         width: 100vw;
         height: 100vh;
@@ -564,10 +563,7 @@ li {
 
 /*/Core Areas Mobile/*/
 
-@media only screen and (max-width: 600px) {
-
-
-}
+@media only screen and (max-width: 600px) {}
 
 .core-body {
     overflow: hidden;
