@@ -89,6 +89,27 @@ g {
     cursor: pointer;
 }
 
+#footerbox {
+    height: 10vh;
+    background-color: #006b74;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.75em;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+footer a {
+    color: white;
+}
+
+#footertext {
+    color: white;
+    text-align: center;
+}
+
 
 /*/Index.html/*/
 
@@ -132,8 +153,13 @@ g {
         margin-top: 25vh;
         text-align: right;
     }
+/*tamas*/
     .kea-logo {
-        display: none;
+      display: none;}
+  /*****/
+    #footertext {
+        color: white;
+        text-align: center;
     }
 }
 
