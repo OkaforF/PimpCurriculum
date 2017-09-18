@@ -92,6 +92,12 @@ g {
 
 /*/Index.html/*/
 
+.kea-logo {
+    z-index: 6;
+    position: absolute;
+    margin: 1.5%;
+}
+
 
 /*/Desktop Style/*/
 
@@ -104,7 +110,7 @@ g {
         position: relative;
     }
     #indexTitle {
-        margin-top: 70px;
+        margin-top: 25vh;
         padding-right: 50vw;
         text-align: right;
     }
@@ -122,9 +128,12 @@ g {
         position: relative;
     }
     #indexTitle {
-        padding-right: 20vw;
-        margin-top: 70px;
+        padding-right: 25vw;
+        margin-top: 25vh;
         text-align: right;
+    }
+    .kea-logo {
+        display: none;
     }
 }
 
@@ -189,6 +198,15 @@ g {
     }
     #technology {
         background-color: #00cb9f;
+    }
+    .kea-logo {
+        display: none;
+    }
+    #indexTitle h1 {
+        color: white;
+        font-size: 3em;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 700;
     }
 }
 
