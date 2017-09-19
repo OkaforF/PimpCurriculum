@@ -50,6 +50,7 @@ a:hover {
     text-decoration-color: #e5bd07;
 }
 
+
 span {
     font-family: 'Open sans', serif;
     font-weight: 400;
@@ -116,6 +117,7 @@ span {
     background-color: #d3ad07;
     margin-bottom: 64px;
 }
+
 
 #indexMobileStructure {
     display: none;
@@ -192,23 +194,11 @@ span {
     text-align: center;
 }
 
-#structureCircleCont svg {
-    height: 80vh;
-}
 
-.firstSem:hover,
-.secondSem:hover,
-.thirdSem:hover,
-.fourthSem:hover {
-    fill: blue;
-}
-
-g {
-    cursor: pointer;
-}
+/*/Stylign for the footer/*/
 
 #footerbox {
-    height: 10vh;
+    height: 6vh;
     background-color: #006b74;
     overflow-y: hidden;
     display: flex;
@@ -227,6 +217,9 @@ footer a {
     color: white;
     text-align: center;
 }
+
+
+/*/Styling for footer end/*/
 
 
 /*/Index.html/*/
@@ -262,25 +255,25 @@ footer a {
         background-image: url(images/kea-edited.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
+        height: 86vh;
         position: relative;
     }
     #indexTitle {
         padding-right: 25vw;
-        margin-top: 25vh;
+        margin-top: 15vh;
         text-align: right;
     }
     /*tamas*/
     .kea-logo {
         display: none;
     }
-    /*****/
-    #footertext {
-        color: white;
-        text-align: center;
+
+    .navigation a{
+        margin: 15px;
     }
+
     .navText a {
-        font-size: 1em;
+        margin: 15px;
     }
 }
 
@@ -298,6 +291,7 @@ footer a {
         margin: 200px 20px 0 0;
         text-align: right;
     }
+
     .navigation {
         display: flex;
         justify-content: space-between;
@@ -308,43 +302,20 @@ footer a {
         font-size: 1.2em;
         margin: 0;
     }
+
+    .navText {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        height: 7vh;
+    }
+    .navText a {
+        margin: 10px;
+        font-size: 1em;
+    }
+
     #aboutCont {
         padding: 7vw;
-    }
-    #indexDesktopStructure {
-        display: none;
-    }
-    #indexMobileStructure {
-        display: block;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 3em;
-        text-align: center;
-    }
-    #indexMobileStructure a {
-        text-decoration: none;
-        color: white;
-    }
-    #indexMobileStructure a:hover {
-        text-decoration: underline;
-        color: #d3ad07;
-    }
-    #design,
-    #business,
-    #communication,
-    #technology {
-        padding: 30px;
-    }
-    #design {
-        background-color: #011627;
-    }
-    #business {
-        background-color: #006b74;
-    }
-    #communication {
-        background-color: #008c7f;
-    }
-    #technology {
-        background-color: #00cb9f;
     }
     .kea-logo {
         display: none;
@@ -384,6 +355,8 @@ footer a {
     height: auto;
 }
 
+/*/Desktop style/*/
+
 @media (min-width:601px) {
     #c-img,
     #i-img,
@@ -400,10 +373,6 @@ footer a {
     .intern-heading {
         margin: 20px;
     }
-    #intern-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
     #studyabroad-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -415,9 +384,20 @@ footer a {
     #studyabroad-txt {
         grid-area: stutxt;
     }
+    #intern-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     #career-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-areas: "careertxt careerimg";
+    }
+    #career-img {
+        grid-area: careerimg;
+    }
+    #career-txt {
+        grid-area: careertxt;
     }
 }
 
@@ -558,17 +538,6 @@ li {
 /***Structure Mobile*****/
 
 @media only screen and (max-width: 600px) {
-    .navText {
-        display: flex;
-        justify-content: space-between;
-        padding: 0;
-        font-size: 1em;
-        height: 7vh;
-    }
-    .navText a {
-        margin: 10px;
-        font-size: 1.2em;
-    }
     .structure-container {
         width: 100vw;
         height: 100vh;
