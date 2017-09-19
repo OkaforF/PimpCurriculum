@@ -1,73 +1,197 @@
 /*Global Styling*/
 
+
+/***********text styling*************/
+
+h1 {
+    color: white;
+    font-size: 64px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 96px;
+    font-weight: 700;
+}
+
+h2 {
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 64px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 64px;
+    margin-left: 64px;
+    ;
+}
+
+h3 {}
+
+p {
+    font-family: 'Open sans', serif;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 1.3125em;
+    margin: 0;
+    padding: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+a {
+    font-family: "Lato";
+    font-size: 21px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #052540;
+}
+
+a:hover {
+    color: #094373;
+    text-decoration: underline;
+    text-decoration-color: #e5bd07;
+}
+
+
+span {
+    font-family: 'Open sans', serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+
+/*****************************************/
+
+
+/*********navigation styling**************/
+
+.navigation {
+    position: absolute;
+    z-index: 6;
+    top: 32px;
+    right: 32px;
+}
+
+.navigation a {
+    padding: 21px;
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: #d3ad07;
+}
+
+.structure-body .navigation a,
+.core-body .navigation a {
+    color: white;
+}
+
+
+/*****************************************/
+
 * {
     margin: 0;
     padding: 0;
 }
 
-.navigation {
-    text-align: right;
-    padding: 15px;
-}
-
-.navigation a {
-    margin: 30px;
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-    font-size: 1.2em;
-    color: black;
-}
-
-.navigation a:hover {
-    color: #d7af00;
-    text-decoration: underline;
-}
-
-.navText {
-    text-align: right;
-    background-color: #d7af00;
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-    font-size: 1.2em;
-    padding: 15px;
-}
-
-.navText a {
-    text-decoration: none;
-    color: white;
-    margin: 30px;
-}
-
-.navText a:hover {
-    color: black;
-    text-decoration: underline;
-}
-
 #indexTitle h1 {
-    color: white;
-    font-size: 4.5em;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 700;
-}
-
-#aboutCont {
-    padding: 3vw;
-}
-
-#aboutCont h1 {
-    font-family: 'Rubik', sans-serif;
-    font-size: 3em;
+    text-align: right;
+    right: 50%;
+    position: absolute;
+    top: 25%;
 }
 
 #aboutCont p {
     font-family: 'Open Sans', sans-serif;
-    margin-top: 4vh;
+    font-weight: 100;
+    font-size: 16px;
+    margin-right: 240px;
+    margin-left: 60px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    line-height: 49px;
+    hyphens: auto;
 }
 
-.line {
+#aboutCont .line {
     height: 7px;
-    width: 120px;
+    width: 270px;
     background-color: #d3ad07;
+    margin-bottom: 64px;
+}
+
+
+#indexMobileStructure {
+    display: none;
+}
+
+.applynow {
+    width: 100vw;
+    height: 96px;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+}
+
+.applynow span {
+    margin-left: 64px;
+}
+
+.applynow button {
+    font-size: 32px;
+    background-color: #d3ad07;
+    border: none;
+    padding: 6px;
+    color: white;
+    font-family: 'Rubik';
+    font-weight: 500;
+    margin-left: 40%;
+}
+
+#studyabroad-txt,
+#intern-txt,
+#career-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#career-img {
+    background-image: url(images/entrepreneurship.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 50vw;
+}
+
+#studyabroad-img {
+    background-image: url(images/innovat3.jpg);
+    height: 50vh;
+    width: 50vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#intern-img {
+    background-image: url(images/networking.jpg);
+    width: 50vw;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#indexDesktopStructure {
+    background-image: url(images/study-edited.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#indexDesktopStructure h1 {
+    color: #d3ad07;
+    font-size: 4.5em;
+    font-family: 'Rubik', sans-serif;
+}
+
+#structureCircleCont {
+    text-align: center;
 }
 
 
@@ -103,7 +227,8 @@ footer a {
 .kea-logo {
     z-index: 6;
     position: absolute;
-    margin: 1.5%;
+    margin: 16px;
+    top: 0;
 }
 
 
@@ -118,8 +243,6 @@ footer a {
         position: relative;
     }
     #indexTitle {
-        margin-top: 20vh;
-        padding-right: 50vw;
         text-align: right;
     }
 }
@@ -215,6 +338,8 @@ footer a {
 
 .extra-text {
     font-family: 'Open Sans', sans-serif;
+    margin-left: 32px;
+    margin-right: 32px;
 }
 
 .intern-heading {
@@ -279,10 +404,6 @@ footer a {
 
 /*/Structure.html styling/*/
 
-span {
-    font-family: 'Libre Baskerville', serif;
-}
-
 .pFont,
 li {
     font-family: 'Open Sans', sans-serif;
@@ -292,26 +413,6 @@ li {
 
 li {
     list-style: none;
-}
-
-.h2Font {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 700;
-    color: white;
-    font-size: 2.5em;
-}
-
-.h1Font {
-    font-family: 'open sans', sans-serif;
-    font-weight: 300;
-    color: #464645;
-    font-size: 2em;
-}
-
-.h3Font {
-    font-family: "Libre Baskervilee", serif;
-    font-size: 1.3em;
-    color: #464645;
 }
 
 .semester-title {
@@ -598,3 +699,109 @@ li {
 
 
 /*/Structure.styling end/*/
+
+
+/******Opportunties page******/
+
+.opportunties-body {
+    margin: 0;
+    margin-top: 2vw;
+    padding: 0;
+}
+
+.opportunities-container {
+    margin-top: 32px;
+}
+
+.innovation,
+.network,
+.entrepreneurship {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+}
+
+.innovation-container-text,
+.entrepre-container-text {
+    margin-top: 20vw;
+    border-left: 8px solid #FFD622;
+}
+
+.network-container-text {
+    margin-top: 20vw;
+    border-right: 8px solid #031727;
+}
+
+.innovation-container-image {
+    width: 40vw;
+    height: 85vh;
+    background-image: url(images/innovation.jpg);
+    background-size: cover;
+}
+
+.network-container-image {
+    width: 40vw;
+    height: 85vh;
+    background-image: url(images/network.jpg);
+    background-size: cover;
+}
+
+.image-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    /*    background-color: #FFD622;*/
+    height: 100vh;
+}
+
+.entrepre-container-image {
+    width: 40vw;
+    height: 85vh;
+    background-size: cover;
+    background-image: url(images/intern.jpg);
+}
+
+.entrepre-container-image:hover {
+    background-color: rgba(211, 173, 7, .9);
+}
+
+
+}
+.opp-title {
+    font-family: 'Rubik';
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 71px;
+}
+.innovation p,
+.network p,
+.entrepreneurship p {
+    padding-left: 3vw;
+    padding-top: 3vw;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    max-width: 480px;
+    line-height: 21px;
+    margin-bottom: 21px;
+}
+.opportunties-body .navText {
+    background-color: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+.textdec {
+    text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {
+    .innovation,
+    .network,
+    .entrepreneurship {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 0fr;
+        width: 100vw;
+    }
+}
