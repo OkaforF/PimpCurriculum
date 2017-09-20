@@ -62,21 +62,20 @@ span {
     padding: 2vw;
 }
 
-.navigation a{
+.navigation a {
     margin: 20px;
 }
 
-.nav-other{
+.nav-other {
     background-color: #006b74;
     text-align: right;
     padding: 2vw;
 }
 
-.nav-other a{
+.nav-other a {
     margin: 20px;
     color: white;
 }
-
 
 .active {
     text-decoration: underline;
@@ -147,15 +146,13 @@ span {
 /*/Stylign for the footer/*/
 
 #footerbox {
-    height: 6vh;
     background-color: #006b74;
-    overflow-y: hidden;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     font-family: 'Rubik', sans-serif;
-    font-size: 0.75em;
+    font-size: 0.5em;
     justify-content: center;
-    padding-top: 3%;
 }
 
 footer a {
@@ -165,6 +162,7 @@ footer a {
 #footertext {
     color: white;
     text-align: center;
+    padding-bottom: 5px;
 }
 
 
@@ -239,14 +237,12 @@ footer a {
     .kea-logo {
         display: none;
     }
-
     .navigation a {
         margin: 15px;
     }
     .navText a {
         margin: 15px;
-  }
-
+    }
 }
 
 
@@ -282,10 +278,7 @@ footer a {
         font-size: 1.2em;
         margin: 0;
     }
-
-
     .nav-other {
-
         display: flex;
         justify-content: space-between;
         padding: 10px;
@@ -295,9 +288,8 @@ footer a {
         font-size: 1.2em;
         margin: 0;
     }
-
-    .nav-mobile a{
-        color:white;
+    .nav-mobile a {
+        color: white;
     }
 
     .kea-logo {
@@ -308,6 +300,17 @@ footer a {
         font-size: 3em;
         font-family: 'Rubik', sans-serif;
         font-weight: 700;
+    }
+    .innovation-container-image,
+    .network-container-image,
+    .entrepre-container-image {
+        display: none;
+    }
+    .innovation {
+        display: grid;
+    }
+    .image-border {
+        display: none;
     }
 }
 
@@ -595,7 +598,10 @@ li {
     top: 25%;
 }
 
-#communication, #design, #technology, #business {
+#communication,
+#design,
+#technology,
+#business {
     padding-left: 60px;
     padding-right: 150px;
 }
@@ -710,9 +716,6 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50vw;
-    /*    background-color: #FFD622;*/
-    height: 100vh;
 }
 
 .entrepre-container-image {
@@ -748,7 +751,6 @@ li {
 }
 .opportunties-body {
     background-color: white;
-    position: fixed;
     right: 0;
     top: 0;
 }
@@ -760,15 +762,11 @@ li {
     .network,
     .entrepreneurship {
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 0fr;
         width: 100vw;
     }
 }
 
-
 /*/styling for Json/*/
-
-#module-name{
+#module-name {
     color: black;
 }
