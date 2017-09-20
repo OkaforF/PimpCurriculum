@@ -1,62 +1,46 @@
 [
     {
 
-
+        "category": "communication",
         "module": "Communication & Presentation",
         "content": "You will learn to prepare and communicate to organisations and people both locally and globally using visual, written and  oral presentations.",
         "knowledge": "Communication and marketing theory and methodology. Communication tools, techniques in various forms. Digital communication with different social groups",
-        " skills": "identify target groups and collect and asses data for various target groups and situations. Structure, and plan and communication aimed at selected target groups. Methodology to conduct user tests research on target groups. Summarise and create reports on user tests. Create presentations for different situations using various media",
+        "skills": "identify target groups and collect and asses data for various target groups and situations. Structure, and plan and communication aimed at selected target groups. Methodology to conduct user tests research on target groups. Summarise and create reports on user tests. Create presentations for different situations using various media",
         "copentencies": "handle communication and marketing across platforms including digital. Handle interactive communication in multimedia products. Group work based on a professional approach",
         "ects": "20"
 
   },
-
     {
 
-
+        "category": "design",
         "module": "Design",
         "content": "Students learn skills needed to design and develop concepts, interactive user interfaces for digital platforms.y using visual, written and  oral presentations.",
         "knowledge": "-video and audio production. History of designs and aesthetics in relation to multimedia. Theory and web animation and narrative production techniques. Documenting design",
-        " skills": "creating ideas and concept development. Design user interfaces for different digital platforms using of digital graphic design principles. Apply user-oriented design method. Apply aesthetic styles in relation to the multimedia field. Prepare graphic material for further digital production. Present design-related problems and issues as well as possible solutions to stakeholders. Documenting interactive multimedia productions. Techniques for the production and post-processing of video and audio",
+        "skills": "creating ideas and concept development. Design user interfaces for different digital platforms using of digital graphic design principles. Apply user-oriented design method. Apply aesthetic styles in relation to the multimedia field. Prepare graphic material for further digital production. Present design-related problems and issues as well as possible solutions to stakeholders. Documenting interactive multimedia productions. Techniques for the production and post-processing of video and audio",
         "copentencies": "manage and realise the connection between message and design. Make  connections between identity and design. Design and development of interactive user interfaces. Manage and integrate the expression of digital media on different digital platforms. Participate in group work  based on a professional approach",
         "ects": "25"
 
   },
-
-
-
-
     {
 
-
+        "category": "technology",
         "module": "Coding",
         "content": " Students learn to model, format, structure, document and create dynamic multimedia applications and databases using programming languages. They get a basic understanding of system development using scripting languages.",
         "knowledge": "structure of the internet. Object oriented programming. Content Management Systems applied in practice. Theory and method of system development. Interfaces for exchanging data with third-party services. Important security aspects of networks, multimedia applications and data communication",
-        " skills": "identify target groups and collect and asses data for various target groups and situations. Structure, and plan and communication aimed at selected target groups. Methodology to conduct user tests research on target groups. Summarise and create reports on user tests. Create presentations for different situations using various media",
+        "skills": "identify target groups and collect and asses data for various target groups and situations. Structure, and plan and communication aimed at selected target groups. Methodology to conduct user tests research on target groups. Summarise and create reports on user tests. Create presentations for different situations using various media",
         "copentencies": "Assess and apply key methods and tools for search engine optimisation (SEO). Prepare and present documentation in accordance with practice. Assess and apply current formatting languages. Program client and server-based multimedia solutions. Apply key methods and tools for modelling, structuring and implementing functionality. Use a database manipulation language applied in practice. Apply key methods for modelling data and implementing databases. Apply key methods for assuring quality through testing and troubleshooting.",
         "ects": "25"
 
   },
     {
 
-
+        "category": "business",
         "module": "Business",
         "content": "You will learn to prepare and communicate to organisations and people both locally and globally using visual, written and  oral presentations.",
         "knowledge": "communication and marketing theory and methodology. Communication tools, techniques in various forms. Digital communication with different social groups",
-        " skills": "identify target groups and collect and asses data for various target groups and situations. Structure, and plan and communication aimed at selected target groups. Methodology to conduct user tests research on target groups. Summarise and create reports on user tests. Create presentations for different situations using various media",
+        "skills": "identify target groups and collect and asses data for various target groups and situations. Structure, and plan and communication aimed at selected target groups. Methodology to conduct user tests research on target groups. Summarise and create reports on user tests. Create presentations for different situations using various media",
         "copentencies": "handle communication and marketing across platforms including digital. Handle interactive communication in multimedia products. Group work based on a professional approach",
         "ects": "20"
 
-  },
-
-
-
-
-
-
-
-
-
-
-
+  }
 ]
