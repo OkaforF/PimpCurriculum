@@ -19,7 +19,8 @@ h2 {
     margin-left: 64px;
 }
 
-.json-h2{
+.jsonH2{
+    font-family: 'Rubik', sans-serif;
     font-size: 20px;
     margin-left: 0;
     margin-top: 20px;
