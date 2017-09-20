@@ -115,8 +115,6 @@ fetch('pimp.json').then(function(response) {
                 let clone = template.cloneNode(true);
                 let section = document.querySelector("#"+product.category);
 
-
-                clone.querySelector('#module-name').textContent = product.module;
                 clone.querySelector('#content-txt').textContent = product.content;
                 clone.querySelector('#knowledge-txt').textContent = product.knowledge;
                 clone.querySelector('#skills-txt').textContent = product.skills;
