@@ -321,6 +321,9 @@ footer a {
     #footerText{
         font-size: 2em;
     }
+    .line-height{
+        line-height: 0;
+    }
 }
 
 
@@ -592,14 +595,6 @@ footer a {
     align-items: center;
     position: absolute;
     top: 25%;
-}
-
-#communication,
-#design,
-#technology,
-#business {
-    padding-left: 60px;
-    padding-right: 150px;
 }
 
 .comm-container,
