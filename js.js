@@ -12,37 +12,36 @@ let SecondSemesterTextModal = document.querySelector(".second-semester-title-mod
 let ThirdSemesterTextModal = document.querySelector(".third-semester-title-modal");
 let FourthSemesterTextModal = document.querySelector(".fourth-semester-title-modal");
 
-let modalContent = document.querySelector('.modal-content');
-let semesterslink = document.querySelector('semsters.json');
-let template = document.querySelector('.semesters').content;
 
+fetch("semsters.json").then(function (response) {
+    return response.json();
+}).then(function (json) {
 
-fetch("semsters.json")
-    .then(function (response) {
-        return response.json();
-    }).then(function (json) {
-
-        return show(json);
-    })
+    return show(json);
+})
 
 
 function show(json) {
     console.log(json)
 
-    json.forEach(function (semsters) {
-        console.log(semsters.content);
+    json.forEach(function (product) {
+        console.log(product.content);
 
+        let template = document.querySelector("template").content;
         let clone = template.cloneNode(true);
+        let section = document.querySelector("#" + product.category);
 
-        clone.querySelector(".content").textContent = semsters.content;
-
-        let section = document.querySelector("#" + semsters.category);
-        console.log(section, "#" + semsters.category);
-
-
+        clone.querySelector("#content-txt").textContent = product.content;
+        clone.querySelector("#ects-txt").textContent = product.ects;
+        clone.querySelector("#exam-txt").textContent = product.exam;
 
 
-        modalContent.appendChild(clone);
+
+
+
+
+
+        section.appendChild(clone);
 
     });
 

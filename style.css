@@ -50,7 +50,6 @@ a:hover {
     text-decoration-color: #e5bd07;
 }
 
-
 span {
     font-family: 'Open sans', serif;
     font-weight: 400;
@@ -117,7 +116,6 @@ span {
     background-color: #d3ad07;
     margin-bottom: 64px;
 }
-
 
 #indexMobileStructure {
     display: none;
@@ -267,11 +265,9 @@ footer a {
     .kea-logo {
         display: none;
     }
-
-    .navigation a{
+    .navigation a {
         margin: 15px;
     }
-
     .navText a {
         margin: 15px;
     }
@@ -291,7 +287,6 @@ footer a {
         margin: 200px 20px 0 0;
         text-align: right;
     }
-
     .navigation {
         display: flex;
         justify-content: space-between;
@@ -302,7 +297,6 @@ footer a {
         font-size: 1.2em;
         margin: 0;
     }
-
     .navText {
         display: flex;
         justify-content: space-between;
@@ -313,7 +307,6 @@ footer a {
         margin: 10px;
         font-size: 1em;
     }
-
     #aboutCont {
         padding: 7vw;
     }
@@ -354,6 +347,7 @@ footer a {
     width: 100vw;
     height: auto;
 }
+
 
 /*/Desktop style/*/
 
@@ -482,7 +476,6 @@ li {
     width: 0;
     min-width: 100%;
     box-shadow: 20px 0px 5px #888888;
-    overflow: scroll;
     background-color: #fffdf6;
 }
 
@@ -559,7 +552,6 @@ li {
         width: 0;
         min-width: 100%;
         box-shadow: 20px 0px 5px #888888;
-        overflow: scroll;
         background-color: #fffdf6;
     }
     .first-expand,
@@ -595,6 +587,10 @@ li {
     }
     .fourth-sem {
         background-image: url(images/4sem-mobile.jpg);
+    }
+    .modal-content {
+        max-height: 550px;
+        overflow-y: scroll;
     }
 }
 
