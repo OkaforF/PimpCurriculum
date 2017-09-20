@@ -56,10 +56,6 @@ span {
     font-size: 32px;
 }
 
-
-/*****************************************/
-
-
 /*********navigation styling**************/
 
 .navigation {
@@ -145,11 +141,6 @@ span {
     justify-content: center;
 }
 
-#career-img {}
-
-#intern-img {}
-
-
 /*/Stylign for the footer/*/
 
 #footerbox {
@@ -170,6 +161,11 @@ footer a {
     color: white;
     text-align: center;
     padding-bottom: 5px;
+    font-size: 1.5em;
+}
+
+#footertext a{
+    font-size: 1.3em;
 }
 
 
@@ -252,6 +248,7 @@ footer a {
 /*/Mobile Style/*/
 
 @media (max-width: 600px) {
+
     #headerCont {
         background-image: url(images/kea-mobile.jpg);
         background-repeat: no-repeat;
@@ -294,11 +291,13 @@ footer a {
     .kea-logo {
         display: none;
     }
-    #indexTitle h1 {
-        color: white;
-        font-size: 3em;
-        font-family: 'Rubik', sans-serif;
-        font-weight: 700;
+
+    h1 {
+    color: white;
+    font-size: 3em;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    line-height: 0;
     }
 
     .applynow button {
@@ -318,6 +317,10 @@ footer a {
     }
     .image-border {
         display: none;
+    }
+
+    #footerText{
+        font-size: 2em;
     }
 }
 
@@ -376,17 +379,6 @@ footer a {
 
 
 /*/Structure.html styling/*/
-
-.pFont,
-li {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    letter-spacing: -.5px;
-}
-
-li {
-    list-style: none;
-}
 
 .semester-title {
     font-family: "Rubik";
@@ -582,11 +574,6 @@ li {
 
 
 /********CORE AREAS************/
-
-
-/*/Core Areas Mobile/*/
-
-@media only screen and (max-width: 600px) {}
 
 .core-body {
     overflow: hidden;
