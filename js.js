@@ -13,11 +13,11 @@ let ThirdSemesterTextModal = document.querySelector(".third-semester-title-modal
 let FourthSemesterTextModal = document.querySelector(".fourth-semester-title-modal");
 
 let modalContent = document.querySelector('.modal-content');
-let semesterslink = document.querySelector('semesters.json');
+let semesterslink = document.querySelector('semsters.json');
 let template = document.querySelector('.semesters').content;
 
 
-fetch("semesters.json")
+fetch("semsters.json")
     .then(function (response) {
         return response.json();
     }).then(function (json) {
@@ -29,12 +29,17 @@ fetch("semesters.json")
 function show(json) {
     console.log(json)
 
-    json.forEach(function (semesters) {
-        console.log(semesters.content);
+    json.forEach(function (semsters) {
+        console.log(semsters.content);
 
         let clone = template.cloneNode(true);
 
-        clone.querySelector(".content").textContent = semesters.content;
+        clone.querySelector(".content").textContent = semsters.content;
+
+        let section = document.querySelector("#" + semsters.category);
+        console.log(section, "#" + semsters.category);
+
+
 
 
         modalContent.appendChild(clone);
