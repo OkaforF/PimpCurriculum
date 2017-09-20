@@ -102,9 +102,9 @@ span {
     margin-bottom: 15px;
 }
 
-#aboutCont{
-        padding: 4vw;
-    }
+#aboutCont {
+    padding: 4vw;
+}
 
 .applynow {
     width: 100vw;
@@ -137,11 +137,10 @@ span {
     justify-content: center;
 }
 
-#career-img {
-}
+#career-img {}
 
-#intern-img {
-}
+#intern-img {}
+
 
 /*/Stylign for the footer/*/
 
@@ -191,17 +190,16 @@ footer a {
     #indexTitle {
         text-align: right;
     }
-
     #indexTitle h1 {
-    text-align: right;
-    right: 50%;
-    position: absolute;
-    top: 25%;
-}
+        text-align: right;
+        right: 50%;
+        position: absolute;
+        top: 25%;
+    }
     .intern-heading {
-    font-family: 'Rubik', sans-serif;
-    font-size: 3em;
-}
+        font-family: 'Rubik', sans-serif;
+        font-size: 3em;
+    }
 }
 
 
@@ -220,19 +218,16 @@ footer a {
         margin-top: 15vh;
         text-align: right;
     }
-
     #indexTitle h1 {
-    text-align: right;
-    right: 20%;
-    position: absolute;
-    top: 25%;
-}
-
-.intern-heading {
-    font-family: 'Rubik', sans-serif;
-    font-size: 2em;
+        text-align: right;
+        right: 20%;
+        position: absolute;
+        top: 25%;
     }
-
+    .intern-heading {
+        font-family: 'Rubik', sans-serif;
+        font-size: 2em;
+    }
     /*tamas*/
     .kea-logo {
         display: none;
@@ -259,16 +254,13 @@ footer a {
         margin: 200px 20px 0 0;
         text-align: right;
     }
-
-    #aboutCont{
+    #aboutCont {
         padding: 3vw;
     }
-
     .intern-heading {
-    font-family: 'Rubik', sans-serif;
-    font-size: 2em;
-}
-
+        font-family: 'Rubik', sans-serif;
+        font-size: 2em;
+    }
     .navigation {
         display: flex;
         justify-content: space-between;
@@ -291,7 +283,6 @@ footer a {
     .nav-mobile a {
         color: white;
     }
-
     .kea-logo {
         display: none;
     }
@@ -336,7 +327,6 @@ footer a {
         width: 50vw;
         height: auto;
     }
-
     .intern-heading {
         margin: 20px;
     }
@@ -565,6 +555,10 @@ li {
         max-height: 550px;
         overflow-y: scroll;
     }
+    .image-border {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
@@ -713,7 +707,6 @@ li {
 }
 
 .image-border {
-    display: flex;
     justify-content: center;
     align-items: center;
 }
