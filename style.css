@@ -39,7 +39,7 @@ p {
 a {
     font-family: "Lato";
     font-size: 21px;
-    font-weight: 300;
+    font-weight: 400;
     text-decoration: none;
     color: #052540;
 }
@@ -63,15 +63,25 @@ span {
 /*********navigation styling**************/
 
 .navigation {
-    position: absolute;
-    z-index: 6;
-    top: 32px;
-    right: 32px;
+    text-align: right;
+    padding: 2vw;
 }
 
-.navigation a {
-    padding: 21px;
+.navigation a{
+    margin: 20px;
 }
+
+.nav-other{
+    background-color: #006b74;
+    text-align: right;
+    padding: 2vw;
+}
+
+.nav-other a{
+    margin: 20px;
+    color: white;
+}
+
 
 .active {
     text-decoration: underline;
@@ -225,8 +235,7 @@ footer a {
 .kea-logo {
     z-index: 6;
     position: absolute;
-    margin: 16px;
-    top: 0;
+    margin: 10px;
 }
 
 
@@ -265,12 +274,14 @@ footer a {
     .kea-logo {
         display: none;
     }
+
     .navigation a {
         margin: 15px;
     }
     .navText a {
         margin: 15px;
-    }
+  }
+
 }
 
 
@@ -293,20 +304,27 @@ footer a {
         padding: 10px;
     }
     .navigation a {
+        font-size: 1.2em;
+        margin: 0;
+    }
+
+
+    .nav-other {
+
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .nav-other a {
         color: white;
         font-size: 1.2em;
         margin: 0;
     }
-    .navText {
-        display: flex;
-        justify-content: space-between;
-        padding: 0;
-        height: 7vh;
+
+    .nav-mobile a{
+        color:white;
     }
-    .navText a {
-        margin: 10px;
-        font-size: 1em;
-    }
+
     #aboutCont {
         padding: 7vw;
     }
@@ -625,7 +643,7 @@ li {
     top: 25%;
 }
 
-.core-modal-content {
+#communication, #design, #technology, #business {
     padding-left: 60px;
     padding-right: 150px;
 }
@@ -698,12 +716,6 @@ li {
 
 
 /******Opportunties page******/
-
-.opportunties-body {
-    margin: 0;
-    margin-top: 2vw;
-    padding: 0;
-}
 
 .opportunities-container {
     margin-top: 32px;
@@ -782,7 +794,7 @@ li {
     line-height: 21px;
     margin-bottom: 21px;
 }
-.opportunties-body .navText {
+.opportunties-body {
     background-color: white;
     position: fixed;
     right: 0;
@@ -800,4 +812,11 @@ li {
         grid-template-columns: 0fr;
         width: 100vw;
     }
+}
+
+
+/*/styling for Json/*/
+
+#module-name{
+    color: black;
 }

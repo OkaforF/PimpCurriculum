@@ -99,3 +99,33 @@ function businessContainerExpand() {
 
 
 }
+
+/*/Json for subjects/*/
+
+fetch('pimp.json').then(function(response) {
+                 return response.json();
+            }).then(function(json) {
+                return show(json);
+            })
+
+   function show(json) {
+            json.forEach(function(product) {
+
+                let template = document.querySelector('template').content;
+                let clone = template.cloneNode(true);
+                let section = document.querySelector("#"+product.category);
+
+
+                clone.querySelector('#module-name').textContent = product.module;
+                clone.querySelector('#content-txt').textContent = product.content;
+                clone.querySelector('#knowledge-txt').textContent = product.knowledge;
+                clone.querySelector('#skills-txt').textContent = product.skills;
+                clone.querySelector('#competencies-txt').textContent = product.copentencies;
+                clone.querySelector('#ects').textContent = product.ects;
+
+
+                section.appendChild(clone);
+
+            });
+
+        }
