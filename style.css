@@ -27,13 +27,8 @@ p {
     font-family: 'Open sans', serif;
     font-weight: 100;
     font-size: 16px;
-    line-height: 1.3125em;
-    margin: 0;
-    padding: 0;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    margin-left: 16px;
-    margin-right: 16px;
+    line-height: 2.5em;
+    padding: 2vw;
 }
 
 a {
@@ -101,35 +96,16 @@ span {
     padding: 0;
 }
 
-#indexTitle h1 {
-    text-align: right;
-    right: 50%;
-    position: absolute;
-    top: 25%;
-}
-
-#aboutCont p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
-    font-size: 16px;
-    margin-right: 240px;
-    margin-left: 60px;
-    margin-top: 16px;
-    margin-bottom: 32px;
-    line-height: 49px;
-    hyphens: auto;
-}
-
-#aboutCont .line {
+.line {
     height: 7px;
     width: 270px;
     background-color: #d3ad07;
-    margin-bottom: 64px;
+    margin-bottom: 15px;
 }
 
-#indexMobileStructure {
-    display: none;
-}
+#aboutCont{
+        padding: 4vw;
+    }
 
 .applynow {
     width: 100vw;
@@ -163,45 +139,10 @@ span {
 }
 
 #career-img {
-    background-image: url(images/entrepreneurship.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 50vh;
-    width: 50vw;
-}
-
-#studyabroad-img {
-    background-image: url(images/innovat3.jpg);
-    height: 50vh;
-    width: 50vw;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 #intern-img {
-    background-image: url(images/networking.jpg);
-    width: 50vw;
-    height: 50vh;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-
-#indexDesktopStructure {
-    background-image: url(images/study-edited.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#indexDesktopStructure h1 {
-    color: #d3ad07;
-    font-size: 4.5em;
-    font-family: 'Rubik', sans-serif;
-}
-
-#structureCircleCont {
-    text-align: center;
-}
-
 
 /*/Stylign for the footer/*/
 
@@ -252,6 +193,17 @@ footer a {
     #indexTitle {
         text-align: right;
     }
+
+    #indexTitle h1 {
+    text-align: right;
+    right: 50%;
+    position: absolute;
+    top: 25%;
+}
+    .intern-heading {
+    font-family: 'Rubik', sans-serif;
+    font-size: 3em;
+}
 }
 
 
@@ -270,6 +222,19 @@ footer a {
         margin-top: 15vh;
         text-align: right;
     }
+
+    #indexTitle h1 {
+    text-align: right;
+    right: 20%;
+    position: absolute;
+    top: 25%;
+}
+
+.intern-heading {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2em;
+    }
+
     /*tamas*/
     .kea-logo {
         display: none;
@@ -298,6 +263,16 @@ footer a {
         margin: 200px 20px 0 0;
         text-align: right;
     }
+
+    #aboutCont{
+        padding: 3vw;
+    }
+
+    .intern-heading {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2em;
+}
+
     .navigation {
         display: flex;
         justify-content: space-between;
@@ -325,9 +300,6 @@ footer a {
         color:white;
     }
 
-    #aboutCont {
-        padding: 7vw;
-    }
     .kea-logo {
         display: none;
     }
@@ -341,22 +313,6 @@ footer a {
 
 
 /*internship styling begin*/
-
-.extra-text,
-.intern-heading {
-    margin: 20px;
-}
-
-.extra-text {
-    font-family: 'Open Sans', sans-serif;
-    margin-left: 32px;
-    margin-right: 32px;
-}
-
-.intern-heading {
-    font-family: 'Rubik', sans-serif;
-    font-size: 3em;
-}
 
 #c-img,
 #i-img,
@@ -377,11 +333,7 @@ footer a {
         width: 50vw;
         height: auto;
     }
-    .extra-text,
-    .intern-heading {
-        margin: 0 10px 0 10px;
-    }
-    .extra-text,
+
     .intern-heading {
         margin: 20px;
     }
