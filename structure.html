@@ -26,25 +26,10 @@
 
             <div class="first-modal visibility">
                 <div class="blue-div"></div>
-                <div class="modal-content">
-                    <h1 class="h1Font semester-title">Semester 1</h1>
-                    <h2 class="h1Font">Content</h2>
-                    <p class="pFont">The first semester compromises of four areas in Multimedia Production Basic where you learn the basic theory and methodology in the four subject areas within the program. Each subject corresponds to the following ECTS points:</p>
-                    <ul>
-                        <li>Interaction development (10 ECTS)</li>
-                        <li>Design and visualisation (10 ECTS) &amp;Business (5 ECTS)</li>
-                        <li>Communication and presentation (5 ECTS)</li>
-                    </ul>
-                    <h3 class="h3Font">Portfolio Evaluation</h3>
-                    <p class="pFont"> At the end of the first semester of the programme, students are evaluated individually based on a presentation of one or more examples of products submitted in the first semester. During the first semester, students work on a digital portfolio where they submit and evaluate their own assign- ments together with the teachers. The exam covers the core areas of the compulsory programme element in the first year of study with focus on product, report and process.</p>
-                    <p class="pFont"> The exam consists of three elements: </p>
-                    <ol>
-                        <li><span>1.</span>Presentation</li>
-                        <li><span>2.</span> Examination</li>
-                        <li><span>3.</span>Grading and feedback</li>
-                    </ol>
+                <section id="semesterOne" class="modal-content">
 
-                </div>
+
+                </section>
 
             </div>
 
@@ -55,33 +40,9 @@
         <div class="second-semester-container second-sem pointer">
             <div class="second-modal visibility">
                 <div class="blue-div"></div>
-                <div class="modal-content">
-                    <h1 class="h1Font semester-title">Semester 2</h1>
-                    <h1 class="h1Font">Content</h1>
-                    <p class="pFont">During 2nd semester students delve deeper into the four subjects areas in Multimedia Production Basic with a greater emphasis on group projects combining the subjects. Each subject corresponds to the following ECTS points:</p>
-                    <ul>
-                        <li>Interaction development (10 ECTS)</li>
-                        <li>Design and visualisation (10 ECTS) &amp;Business (5 ECTS)</li>
-                        <li>Communication and presentation (5 ECTS)</li>
-                    </ul>
-                    <h3 class="h3Font">Exam</h3>
-                    <p class="pFont">The objective is to test the students’ understanding of the theory, method and tools acquired throughout the first year Multimedia Production Basic.<br><br> The exam is to demonstrate that the student is able to:</p>
-                    <ul>
-                        <li>communicate visually to a target group</li>
-                        <li>develop an interactive digital product, taking into account the stakeholders</li>
-                        <li>carry out a group project</li>
-                        <li>submission of report documenting project</li>
-                    </ul>
-                    <p class="pFont">The exam consists of</p>
-                    <ul>
-                        <li><span>1.</span>Presentation</li>
-                        <li><span>2.</span>Examination</li>
-                        <li><span>3.</span>Grading and feedback</li>
+                <section id="semesterTwo" class="modal-content">
 
-                        <p class="pFont">No. of ECTS</p>
-                        <p class="pFont"> 60 ECTS</p>
-                    </ul>
-                </div>
+                </section>
             </div>
             <div class="text-center">
                 <h1 class="h2Font second-semester-title-modal">2nd Semester</h1>
@@ -90,16 +51,9 @@
         <div class="third-semester-container third-sem pointer">
             <div class="third-modal visibility">
                 <div class="blue-div"></div>
-                <div class="modal-content">
-                    <h1 class="h1Font semester-title">Semester 3</h1>
-                    <h1 class="h1Font">Content</h1>
-                    <p class="pFont">On 3rd semester students will begin the Multimedia Production Advanced program. A major component is they will be able to select one of several elective courses where they can specialise in one the four main subject areas.</p>
-                    <h3 class="h3Font">Exam</h3>
-                    <p class="pFont">Students will be tested on their understanding of the theory, method and tools acquired through the compulsory programme element Multimedia Production Advanced. The elective subject is concluded with a presentation and a discussion, either individually or in groups, on the products which the student/s have developed in connection with the elective subject.
-                    </p>
-                    <p class="pFont">No. of ECTS</p>
-                    <p class="pFont">30 ECTS</p>
-                </div>
+                <section id="semesterThree" class="modal-content">
+
+                </section>
             </div>
             <div class="text-center">
                 <h1 class="h2Font third-semester-title-modal">3rd Semester</h1>
@@ -108,19 +62,9 @@
         <div class="fourth-semester-container fourth-sem pointer">
             <div class="fourth-modal visibility">
                 <div class="blue-div"></div>
-                <div class="modal-content">
-                    <h1 class="h1Font semester-title">Semester 4</h1>
-                    <h1 class="h1Font">Content</h1>
-                    <p class="pFont">On Fourth semester you complete a ten-week internship in a company either in Denmark or abroad and and the final examination you will write a paper and create a digital product within the scope of the programme.</p>
+                <section id="semesterFour" class="modal-content">
 
-                    <h3 class="h3Font">Exam</h3>
-                    <p class="pFont">The internship is concluded with an internship report, a presentation and a discussion of one or more products developed by the student during the internship, as well as of the professional experience gained by the student.</p>
-
-                    <p class="pFont">Fourth-semester exam – internship ECTS credits 15 ECTS</p>
-                    <p class="pFont">The program concludes with an external Exam</p>
-                    <p class="pFont">No. of ECTS</p>
-                    <p class="pFont">15 ECTS</p>
-                </div>
+                </section>
 
             </div>
             <div class="text-center">
@@ -129,6 +73,24 @@
         </div>
 
     </div>
+
+    <template>
+        <h3>Content</h3>
+    <p id="content-txt"></p>
+             <h3>ECTS points</h3>
+    <p id="ects-txt"></p>
+             <h3>Exam</h3>
+    <p id="exam-txt"></p>
+
+
+
+    </template>
+
+
+
+
+
+
 </body>
 <script src="js.js"></script>
 

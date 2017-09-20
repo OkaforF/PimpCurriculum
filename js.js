@@ -12,6 +12,43 @@ let SecondSemesterTextModal = document.querySelector(".second-semester-title-mod
 let ThirdSemesterTextModal = document.querySelector(".third-semester-title-modal");
 let FourthSemesterTextModal = document.querySelector(".fourth-semester-title-modal");
 
+
+fetch("semsters.json").then(function (response) {
+    return response.json();
+}).then(function (json) {
+
+    return show(json);
+})
+
+
+function show(json) {
+    console.log(json)
+
+    json.forEach(function (product) {
+        console.log(product.content);
+
+        let template = document.querySelector("template").content;
+        let clone = template.cloneNode(true);
+        let section = document.querySelector("#" + product.category);
+
+        clone.querySelector("#content-txt").textContent = product.content;
+        clone.querySelector("#ects-txt").textContent = product.ects;
+        clone.querySelector("#exam-txt").textContent = product.exam;
+
+
+
+
+
+
+
+        section.appendChild(clone);
+
+    });
+
+}
+
+
+
 FirstSemContainer.addEventListener('click', FirstContainerExpand);
 
 function FirstContainerExpand() {
