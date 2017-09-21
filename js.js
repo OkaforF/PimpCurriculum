@@ -32,13 +32,22 @@ function show(json) {
         let section = document.querySelector("#" + product.category);
 
         clone.querySelector("#content-txt").textContent = product.content;
-        clone.querySelector("#ects-txt").textContent = product.ects;
-        clone.querySelector("#exam-txt").textContent = product.exam;
 
+        product.ects.forEach(function(ects){
 
+                    let li=document.createElement("li");
+                    li.textContent=ects;
 
+                    clone.querySelector('#ects-ul').appendChild(li);
+                })
 
+        product.exam.forEach(function(exam){
 
+                    let li=document.createElement("li");
+                    li.textContent=exam;
+
+                    clone.querySelector('#exam-ul').appendChild(li);
+                })
 
 
         section.appendChild(clone);

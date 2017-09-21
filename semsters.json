@@ -4,8 +4,8 @@
 
         "category": "semesterOne",
         "content": "The first semester compromises of four areas in Multimedia Production Basic where you learn the basic theory and methodology in the four subject areas within the program.",
-        "ects": "Each subject corresponds to the following ECTS points: Interaction development (10 ECTS), Design and visualisation (10 ECTS) &Business (5 ECTS), Communication and presentation (5 ECTS)",
-        "exam": "At the end of the first semester of the programme, students are evaluated individually based on a presentation of one or more examples of products submitted in the first semester. During the first semester, students work on a digital portfolio where they submit and evaluate their own assign- ments together with the teachers. The exam covers the core areas of the compulsory programme element in the first year of study with focus on product, report and process.The exam consists of three elements: 1.Presentation 2. Examination. 3.Grading and feedback"
+        "ects": ["Interaction development (10 ECTS)", "Design and visualisation (10 ECTS)", "Business (5 ECTS)", "Communication and presentation (5 ECTS)"],
+        "exam": ["At the end of the first semester of the programme, students are evaluated individually based on a presentation of one or more examples of products submitted in the first semester. During the first semester, students work on a digital portfolio where they submit and evaluate their own assign- ments together with the teachers. The exam covers the core areas of the compulsory programme element in the first year of study with focus on product, report and process", "The exam consists of three elements:", "1.Presentation", "2. Examination", "3.Grading and feedback"]
 
   },
 
@@ -14,9 +14,9 @@
 
         "category": "semesterTwo",
         "content": "During 2nd semester students delve deeper into the four subjects areas in Multimedia Production Basic with a greater emphasis on group projects combining the subjects.",
-        "ects": "Each subject corresponds to the following ECTS points: Interaction development (10 ECTS). Design and visualisation (10 ECTS) &Business (5 ECTS).Communication and presentation (5 ECTS)",
-        "exam": "The objective is to test the students’ understanding of the theory, method and tools acquired throughout the first year Multimedia Production Basic.The exam is to demonstrate that the student is able to: communicate visually to a target group. Develop an interactive digital product, taking into account the stakeholders. Carry out a group project. Submission of report documenting project. The exam consists of 1.Presentation 2.Examination 3.Grading and feedback No. of ECTS 60 ECTS"
-
+        "ects": ["Interaction development (10 ECTS)", "Design and visualisation (10 ECTS)", "Business (5 ECTS)", "Communication and presentation (5 ECTS)"],
+        "exam": ["The objective is to test the students’ understanding of the theory, method and tools acquired throughout the first year Multimedia Production Basic.The exam is to demonstrate that the student is able to: communicate visually to a target group. Develop an interactive digital product, taking into account the stakeholders. Carry out a group project. Submission of report documenting project", "The exam consists of:", "1.Presentation", "2.Examination", "3.Grading and feedback", "No. of ECTS: 60 ECTS"
+]
 
   },
 
@@ -29,8 +29,8 @@
 
         "category": "semesterThree",
         "content": "On 3rd semester students will begin the Multimedia Production Advanced program. A major component is they will be able to select one of several elective courses where they can specialise in one the four main subject areas.",
-        "ects": "Each subject corresponds to the following ECTS points: Third-semester exam (20 ECTS), Internship exam (15 ECTS)",
-        "exam": "Students will be tested on their understanding of the theory, method and tools acquired through the compulsory programme element Multimedia Production Advanced. The elective subject is concluded with a presentation and a discussion, either individually or in groups, on the products which the student/s have developed in connection with the elective subject. No. of ECTS 30 ECTS"
+        "ects": ["Third-semester exam (20 ECTS)", "Internship exam (15 ECTS)"],
+        "exam": ["Students will be tested on their understanding of the theory, method and tools acquired through the compulsory programme element Multimedia Production Advanced. The elective subject is concluded with a presentation and a discussion, either individually or in groups, on the products which the student/s have developed in connection with the elective subject", "No. of ECTS: 30 ECTS"]
 
 
   },
@@ -40,8 +40,8 @@
 
         "category": "semesterFour",
         "content": "On Fourth semester you complete a ten-week internship in a company either in Denmark or abroad and and the final examination you will write a paper and create a digital product within the scope of the programme.",
-        "ects": "Each subject corresponds to the following ECTS points: Interaction development (10 ECTS), Design and visualisation (10 ECTS) &Business (5 ECTS), Communication and presentation (5 ECTS)",
-        "exam": "The internship is concluded with an internship report, a presentation and a discussion of one or more products developed by the student during the internship, as well as of the professional experience gained by the student.  For the final examination you will write a paper and create a digital product within the scope of the programme. Fourth-semester exam – internship ECTS credits 15 ECTS. The program concludes with an external Exam No. of ECTS 15 ECTS"
+        "ects": ["Interaction development (10 ECTS)", "Design and visualisation (10 ECTS)", "Business (5 ECTS)", "Communication and presentation (5 ECTS)"],
+        "exam": ["The internship is concluded with an internship report, a presentation and a discussion of one or more products developed by the student during the internship, as well as of the professional experience gained by the student. For the final examination you will write a paper and create a digital product within the scope of the programme", "Fourth-semester exam - internship ECTS credits: 15 ECTS", "The program concludes with an external Exam", "No. of ECTS: 15 ECTS"]
 
 
   }
