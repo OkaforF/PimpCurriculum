@@ -111,14 +111,38 @@ fetch('pimp.json').then(function(response) {
    function show(json) {
             json.forEach(function(product) {
 
+                console.log(product.knowledge);
+
                 let template = document.querySelector('template').content;
                 let clone = template.cloneNode(true);
                 let section = document.querySelector("#"+product.category);
 
                 clone.querySelector('#content-txt').textContent = product.content;
-                clone.querySelector('#knowledge-txt').textContent = product.knowledge;
-                clone.querySelector('#skills-txt').textContent = product.skills;
-                clone.querySelector('#competencies-txt').textContent = product.copentencies;
+
+                product.knowledge.forEach(function(knowledge){
+
+                    let li=document.createElement("li");
+                    li.textContent=knowledge;
+
+                    clone.querySelector('#knowledge-ul').appendChild(li);
+
+                });
+
+                product.skills.forEach(function(skills){
+
+                    let li=document.createElement("li");
+                    li.textContent=skills;
+
+                    clone.querySelector('#skills-ul').appendChild(li);
+                })
+
+                product.copentencies.forEach(function(copentencies){
+                    let li=document.createElement("li");
+                    li.textContent=copentencies;
+
+                    clone.querySelector('#competencies-ul').appendChild(li);
+                })
+
                 clone.querySelector('#ects').textContent = product.ects;
 
 
